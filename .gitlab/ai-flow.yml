@@ -1,0 +1,42 @@
+version: "v1"
+environment: ambient
+
+# Aoineco & Co. ShipGuard Pipeline Configuration
+# Optimized for Alpha Oracle V6 & Solana Sentinel
+
+components:
+  - name: "release_guardian"
+    type: AgentComponent
+    prompt_id: "shipguard_v1_core"
+    inputs: 
+      - from: "context:project_id"
+        as: "project_id"
+      - from: "context:event"
+        as: "trigger_event"
+    toolset:
+      - "get_merge_request"
+      - "list_merge_request_diffs"
+      - "list_vulnerabilities"
+      - "create_merge_request_note"
+    ui_log_events: ["on_agent_final_answer", "on_tool_execution_success"]
+
+  - name: "security_auditor"
+    type: AgentComponent
+    prompt_id: "shipguard_security_expert"
+    inputs:
+      - from: "release_guardian.findings"
+        as: "preliminary_report"
+    toolset:
+      - "get_vulnerability_details"
+      - "create_vulnerability_issue"
+    ui_log_events: ["on_agent_final_answer"]
+
+triggers:
+  - type: "on_merge_request_updated"
+    target: "release_guardian"
+  - type: "on_mention"
+    target: "release_guardian"
+
+reporting:
+  notion_sync: true
+  notion_db_id: "3009c616de868146a4fdf512bf5efe2b"
