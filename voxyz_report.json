@@ -1,0 +1,38 @@
+{
+  "parent": { "database_id": "3009c616de8681eebe77d865f72338c5" },
+  "properties": {
+    "Name": {
+      "title": [{ "text": { "content": "🔍 Gemini 3 Pro 상세 분석 리포트 - VoxYZ AI 6 Agents Tutorial" } }]
+    },
+    "Summary": {
+      "rich_text": [{ "text": { "content": "4개 테이블(Proposal-Mission-Step-Event)로 에이전트 자율 루프를 구현하는 아키텍처 가이드" } }]
+    }
+  },
+  "children": [
+    {
+      "object": "block",
+      "type": "heading_1",
+      "heading_1": { "rich_text": [{ "text": { "content": "🔍 Gemini 3 Pro 상세 분석 리포트" } }] }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": { "rich_text": [{ "text": { "content": "**한 줄 요약:** 대상의 정체와 핵심 기능 요약.\nVoxYZ AI에서 공개한 6개의 자율 에이전트 구축 가이드로, Supabase를 기반으로 한 '닫힌 루프(Closed Loop)' 설계를 통해 에이전트의 자율적 행동과 통제를 조화시킨 시스템." } }] }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": { "rich_text": [{ "text": { "content": "**핵심 구조:**\n- 4개 핵심 테이블: ops_mission_proposals, ops_missions, ops_mission_steps, ops_agent_events\n- Single Proposal Intake Pipeline: 모든 에이전트의 요청을 한 곳에서 검증 및 승인\n- Cap Gates: 일일 작업량 및 쿼터 제한 로직" } }] }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": { "rich_text": [{ "text": { "content": "**배울 점:**\n- 에이전트가 직접 실행하는 것이 아니라 '제안'을 하고 시스템이 '승인'하는 구조를 통해 안전성 확보\n- 모든 과정을 이벤트 스트림으로 남겨 투명한 모니터링 가능" } }] }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": { "rich_text": [{ "text": { "content": "**판단 메모:**\n- The Alpha Oracle V3 엔진에 이 아키텍처를 즉시 이식하여 Scout, Analyst, Critic의 협업 체계 구축\n- SQL 마이그레이션 완료 (2026-02-09)" } }] }
+    }
+  ]
+}

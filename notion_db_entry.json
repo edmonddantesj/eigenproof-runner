@@ -1,0 +1,41 @@
+{
+  "parent": { "database_id": "2fc9c616-de86-8176-bd38-cd557fe32934" },
+  "properties": {
+    "Name": {
+      "title": [
+        {
+          "text": {
+            "content": "Hypercore PR #21: Moltbot Deployment & CNI Fixes",
+            "link": { "url": "https://www.notion.so/Hypercore-PR-21-Moltbot-Deployment-CNI-Fixes-2ff9c616de86812c9376eed87e686741" }
+          }
+        }
+      ]
+    },
+    "URL": {
+      "url": "https://github.com/Vistara-Labs/hypercore/pull/21"
+    },
+    "Category": {
+      "select": {
+        "name": "AI Infra & Skills"
+      }
+    },
+    "Key Point": {
+      "rich_text": [
+        {
+          "text": {
+            "content": "AI Agent 배포 자동화 (Entrypoint Config Injection) 및 CNI 안정성 확보 (GC, IP Leak 방지)."
+          }
+        }
+      ]
+    },
+    "Benchmarking Idea": {
+      "rich_text": [
+        {
+          "text": {
+            "content": "Agent 구동 시 Runtime Config Injection 패턴 및 CNI Resource GC 로직 참고."
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": { "database_id": "3009c616-de86-8173-87d8-000b5c898459" },
+  "properties": {
+    "No.": { "rich_text": [{ "text": { "content": "52" } }] },
+    "Name": { "title": [{ "text": { "content": "ClawRouter (BlockRunAI)" } }] },
+    "등록일": { "date": { "start": "2026-02-08" } },
+    "URL": { "url": "https://github.com/BlockRunAI/ClawRouter" },
+    "Category": { "select": { "name": "AI Infra & Skills" } },
+    "Key Point": { "rich_text": [{ "text": { "content": "에이전트 경제적 자율성 부여 (x402 결제 + 최적 모델 라우팅)" } }] },
+    "Benchmarking Idea": { "rich_text": [{ "text": { "content": "TPM 이슈 방지를 위한 모델 폴백 로직 및 x402 기반 수익화 구조 벤치마킹" } }] }
+  }
+}

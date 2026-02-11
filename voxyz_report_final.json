@@ -1,0 +1,36 @@
+{
+  "parent": { "database_id": "3009c616de8681eebe77d865f72338c5" },
+  "properties": {
+    "Name": {
+      "title": [{ "text": { "content": "🔍 Gemini 3 Pro 상세 분석 리포트 - VoxYZ AI 자율 운영 체제 완성 가이드" } }]
+    },
+    "Key Point": {
+      "rich_text": [{ "text": { "content": "4개 테이블 기반 Closed Loop 및 Single Proposal Intake Pipeline" } }]
+    },
+    "Benchmarking Idea": {
+      "rich_text": [{ "text": { "content": "Cap Gates(쿼터 제한)를 통한 에이전트 활동 통제 및 안전성 확보" } }]
+    }
+  },
+  "children": [
+    {
+      "object": "block",
+      "type": "heading_1",
+      "heading_1": { "rich_text": [{ "text": { "content": "🔍 VoxYZ AI 6개 에이전트 운영 체제 상세 분석" } }] }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": { "rich_text": [{ "text": { "content": "**핵심 개념: Closed Loop (닫힌 루프)**\n에이전트가 생각만 하는 것이 아니라, '제안(Proposal) -> 승인/미션(Mission) -> 단계적 실행(Step) -> 기록(Event)'의 순환 구조를 통해 실제로 '일'을 하게 만드는 시스템." } }] }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": { "rich_text": [{ "text": { "content": "**주요 구성 요소:**\n1. Single Proposal Intake: 모든 에이전트의 액션 요청은 동일한 검증 파이프라인을 통과해야 함.\n2. Cap Gates: 에이전트별 일일 작업량(예: 일일 트윗 8개 제한)을 검사하여 리소스 낭비 및 폭주 방지.\n3. Pixel-art Office: 에이전트들의 활동을 시각화하여 투명성 확보." } }] }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": { "rich_text": [{ "text": { "content": "**The Alpha Oracle V4 적용점:**\n-  테이블을 통해 Scout의 예측 가설을 먼저 검증.\n- Critic이 승인한 미션만 실제 베팅 또는 로그 기록으로 연결.\n- 모든 토론 과정을 에 기록하여 Moltbook과 연동." } }] }
+    }
+  ]
+}

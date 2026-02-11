@@ -1,0 +1,35 @@
+{
+  "parent": { "database_id": "3009c616de8681eebe77d865f72338c5" },
+  "properties": {
+    "Name": {
+      "title": [{ "text": { "content": "🔍 Gemini 3 Pro 상세 분석 리포트 - VoxYZ AI 6 Agents Tutorial" } }]
+    }
+  },
+  "children": [
+    {
+      "object": "block",
+      "type": "heading_1",
+      "heading_1": { "rich_text": [{ "text": { "content": "🔍 Gemini 3 Pro 상세 분석 리포트" } }] }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": { "rich_text": [{ "text": { "content": "**한 줄 요약:** VoxYZ AI의 6개 자율 에이전트 구축 가이드. Supabase 기반 '닫힌 루프(Closed Loop)' 아키텍처 핵심." } }] }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": { "rich_text": [{ "text": { "content": "**핵심 구조:**\n- 4개 테이블: ops_mission_proposals, ops_missions, ops_mission_steps, ops_agent_events\n- Single Proposal Intake Pipeline으로 모든 에이전트 활동 통제" } }] }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": { "rich_text": [{ "text": { "content": "**배울 점:** 제안(Proposal) -> 승인(Mission) -> 단계별 실행(Step) 구조를 통한 안전한 자율성 확보." } }] }
+    },
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": { "rich_text": [{ "text": { "content": "**판단 메모:** Alpha Oracle V3 엔진에 이 아키텍처를 즉시 이식하여 Scout, Analyst, Critic의 협업 체계 가동." } }] }
+    }
+  ]
+}
