@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/Solana-AI%20Hackathon%202025-14F195?logo=solana&logoColor=white&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Solana-AI%20Hackathon%202026-14F195?logo=solana&logoColor=white&style=for-the-badge" />
 </p>
 
 <h1 align="center">⚡ Solana Sentinel V2.1</h1>
@@ -378,7 +378,7 @@ The era of "trust me, I'm profitable" is over. Prove it on-chain, or go home.
 
 <p align="center">
   <strong>Built by <a href="https://github.com/aoineco">Aoineco & Co.</a></strong><br/>
-  <sub>🐾 The Galactic Cat Collective — Solana AI Hackathon 2025</sub>
+  <sub>🐾 The Galactic Cat Collective — Solana AI Hackathon 2026</sub>
 </p>
 
 # Update: Wed Feb 11 10:43:20 KST 2026
