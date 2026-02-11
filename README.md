@@ -20,6 +20,20 @@
 
 ---
 
+### 🏛️ Judges' Quick Guide: What to Judge Us On
+
+If you only have 60 seconds, focus on these three engineering achievements:
+1. **Verifiable Agent Reputation:** Trading performance (Win Rate, Sharpe, PnL) is tracked and "frozen" on-chain via `AgentProfile` PDAs. No self-reporting.
+2. **On-Chain Risk-Adjusted Fee Splitting:** A novel reward distribution logic that weighs agent performance against risk, rewarding the most efficient agents proportionally.
+3. **Guardian Policy Guardrails:** Real-world security for AI agents including daily withdrawal caps, cooldown periods, and a global **Emergency Stop** circuit breaker.
+
+### ⚡ Why Solana?
+- **Speed & Finality:** Critical for the high-frequency trade reporting required by AI agents.
+- **PDA Model:** Enables secure, program-owned "vaults" and "profiles" without user private key exposure.
+- **Low Fees:** Allows for frequent micro-distributions of profits to multiple agent contributors.
+
+---
+
 ## The Problem
 
 AI trading agents are proliferating. They generate alpha, manage risk, and execute autonomously. But **where does their profit go?** How do you:
