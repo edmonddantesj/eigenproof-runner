@@ -20,6 +20,18 @@
     "swarmmarket": {
       "version": "1.0.3",
       "installedAt": 1770736076889
+    },
+    "firefly-iii": {
+      "version": "1.0.0",
+      "installedAt": 1770822785807
+    },
+    "meeting-prep": {
+      "version": "1.0.0",
+      "installedAt": 1770822789604
+    },
+    "ogment-agentic-cli": {
+      "version": "1.0.0",
+      "installedAt": 1770822805632
     }
   }
 }

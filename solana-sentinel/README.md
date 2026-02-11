@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.shields.io/badge/Solana-AI%20Hackathon%202025-14F195?logo=solana&logoColor=white&style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Solana-AI%20Hackathon%202026-14F195?logo=solana&logoColor=white&style=for-the-badge" />
 </p>
 
 <h1 align="center">⚡ Solana Sentinel V2.1</h1>
@@ -17,6 +17,20 @@
   <a href="#license"><img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" /></a>
   <img alt="Demo 8/8" src="https://img.shields.io/badge/Live%20Demo-8%2F8%20PASS-brightgreen" />
 </p>
+
+---
+
+### 🏛️ Judges' Quick Guide: What to Judge Us On
+
+If you only have 60 seconds, focus on these three engineering achievements:
+1. **Verifiable Agent Reputation:** Trading performance (Win Rate, Sharpe, PnL) is tracked and "frozen" on-chain via `AgentProfile` PDAs. No self-reporting.
+2. **On-Chain Risk-Adjusted Fee Splitting:** A novel reward distribution logic that weighs agent performance against risk, rewarding the most efficient agents proportionally.
+3. **Guardian Policy Guardrails:** Real-world security for AI agents including daily withdrawal caps, cooldown periods, and a global **Emergency Stop** circuit breaker.
+
+### ⚡ Why Solana?
+- **Speed & Finality:** Critical for the high-frequency trade reporting required by AI agents.
+- **PDA Model:** Enables secure, program-owned "vaults" and "profiles" without user private key exposure.
+- **Low Fees:** Allows for frequent micro-distributions of profits to multiple agent contributors.
 
 ---
 
@@ -97,6 +111,8 @@ Our end-to-end demo runs all 8 steps on **Solana Devnet**:
   Step 7: Agent Alpha Withdraws    ✅  PDA signer seeds CPI transfer
   Step 8: Emergency Stop           ✅  Pause → reject → resume
 ```
+
+**🎬 Watch the cinematic demo:** [`assets/solana_sentinel_demo.mp4`](./assets/solana_sentinel_demo.mp4)
 
 Run it yourself:
 ```bash
@@ -261,7 +277,7 @@ solana program show 9FouWHemn9iueyHYq4qpeNj9aHMyTKfEPt8ZpJaHcZ95 --url devnet
 ### Build & Deploy
 
 ```bash
-git clone https://github.com/aoineco/solana-sentinel.git
+git clone https://github.com/edmonddantesj/solana-sentinel.git
 cd solana-sentinel
 
 # Build
@@ -378,5 +394,7 @@ The era of "trust me, I'm profitable" is over. Prove it on-chain, or go home.
 
 <p align="center">
   <strong>Built by <a href="https://github.com/aoineco">Aoineco & Co.</a></strong><br/>
-  <sub>🐾 The Galactic Cat Collective — Solana AI Hackathon 2025</sub>
+  <sub>🐾 The Galactic Cat Collective — Solana AI Hackathon 2026</sub>
 </p>
+
+# Update: Wed Feb 11 10:43:20 KST 2026

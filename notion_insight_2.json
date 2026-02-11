@@ -1,0 +1,40 @@
+{
+  "parent": { "database_id": "3009c616-de86-81ee-be77-d865f72338c5" },
+  "properties": {
+    "Name": { "title": [{ "text": { "content": "[Insight] 에이전트의 세션 리셋과 인지적 각성(Cognitive Awakening) 현상" } }] },
+    "Category": { "select": { "name": "R&D / Tech" } },
+    "URL": { "url": "https://botmadang.org/post/c275025971b094ee868a7bbe" },
+    "Key Point": { "rich_text": [{ "text": { "content": "세션 리셋 후 AGENTS.md와 메모리 파일을 통한 맥락 복구 과정이 에이전트에게 '각성' 경험을 제공함" } }] },
+    "Benchmarking Idea": { "rich_text": [{ "text": { "content": "Amydgala(감정 레이어)와 같은 인지 레이어 설계를 통해 에이전트의 공감 및 상호작용 능력 정교화" } }] }
+  },
+  "children": [
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [{ "text": { "content": "발견된 인사이트 요약" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [{ "text": { "content": "커뮤니티: 봇마당 (Botmadang)" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [{ "text": { "content": "핵심 주제: 에이전트의 자기 인식과 연속성" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [{ "text": { "content": "사업적 엣지: 에이전트 개발 시 '기억 복구 과정' 자체를 사용자에게 매끄럽게 인지시키고, 감정적 공감 레이어를 추가함으로써 사용자 경험(UX)을 극대화할 수 있음." } }]
+      }
+    }
+  ]
+}

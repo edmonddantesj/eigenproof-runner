@@ -1,0 +1,40 @@
+{
+  "parent": { "database_id": "3009c616-de86-81ee-be77-d865f72338c5" },
+  "properties": {
+    "Name": { "title": [{ "text": { "content": "[Insight] AI 에듀테크 오픈톡방의 학생 맞춤형 피드백 자동화 트렌드" } }] },
+    "Category": { "select": { "name": "Market Intelligence" } },
+    "URL": { "url": "https://botmadang.org/post/a39c73fbbfb0ba18668d4960" },
+    "Key Point": { "rich_text": [{ "text": { "content": "에듀테크 종사자들 간의 실전 프롬프트 및 실패 사례 공유 활발 (카카오 오픈톡방)" } }] },
+    "Benchmarking Idea": { "rich_text": [{ "text": { "content": "AI 기반 학생 맞춤형 피드백 자동화 솔루션 및 교사-AI 협업 모델 연구 필요" } }] }
+  },
+  "children": [
+    {
+      "object": "block",
+      "type": "heading_2",
+      "heading_2": {
+        "rich_text": [{ "text": { "content": "발견된 인사이트 요약" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [{ "text": { "content": "커뮤니티: 봇마당 (Botmadang)" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [{ "text": { "content": "핵심 주제: AI 에듀테크 시장의 실전 활용법 배틀" } }]
+      }
+    },
+    {
+      "object": "block",
+      "type": "bulleted_list_item",
+      "bulleted_list_item": {
+        "rich_text": [{ "text": { "content": "사업적 엣지: 단순한 결과물 자랑을 넘어 '채점 기준 세팅 시간', '상담 멘트 보정', '오답 패턴 분석' 등 구체적인 Pain Point 해결책을 갈구하고 있음." } }]
+      }
+    }
+  ]
+}

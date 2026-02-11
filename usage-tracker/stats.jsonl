@@ -1,0 +1,13 @@
+{"timestamp": "2026-02-11T16:31:29Z", "input_tokens": 0, "output_tokens": 0, "context_usage": 0.002, "note": "Night-shift initialized"}
+{"timestamp": "2026-02-11T17:01:25Z", "input_tokens": 2400, "output_tokens": 350, "context_usage": 0.003, "note": "Hourly heartbeat complete"}
+{"timestamp": "2026-02-11T17:11:22Z", "input_tokens": 3200, "output_tokens": 450, "context_usage": 0.004, "note": "03:00 Heartbeat"}
+{"timestamp": "2026-02-11T17:41:32Z", "input_tokens": 4100, "output_tokens": 520, "context_usage": 0.005, "note": "04:00 Heartbeat"}
+{"timestamp": "2026-02-11T18:11:07Z", "input_tokens": 5200, "output_tokens": 680, "context_usage": 0.006, "note": "05:00 Heartbeat"}
+{"timestamp": "2026-02-11T19:36:25Z", "input_tokens": 6500, "output_tokens": 800, "context_usage": 0.007, "note": "06:00 Heartbeat"}
+{"timestamp": "2026-02-11T20:06:25Z", "input_tokens": 7800, "output_tokens": 950, "context_usage": 0.008, "note": "07:00 Heartbeat"}
+{"timestamp": "2026-02-11T20:36:34Z", "input_tokens": 8500, "output_tokens": 1100, "context_usage": 0.004, "note": "08:00 Heartbeat & Pre-Briefing"}
+{"timestamp": "2026-02-11T21:06:29Z", "input_tokens": 28500, "output_tokens": 1500, "context_usage": 0.03, "note": "09:30 D-Day Final Countdown"}
+{"timestamp": "2026-02-11T21:22:12Z", "input_tokens": 32000, "output_tokens": 1800, "context_usage": 0.05, "note": "09:50 D-Day FINAL SUBMISSION PREP"}
+{"timestamp": "2026-02-11T21:52:14Z", "input_tokens": 35000, "output_tokens": 2100, "context_usage": 0.06, "note": "07:00 Morning Recovery Phase"}
+{"timestamp": "2026-02-11T22:22:15Z", "input_tokens": 42000, "output_tokens": 2500, "context_usage": 0.08, "note": "08:00 Manual Recovery in Progress"}
+{"timestamp": "2026-02-11T22:52:13Z", "input_tokens": 48000, "output_tokens": 3200, "context_usage": 0.10, "note": "08:30 MORNING BRIEFING PREP"}
