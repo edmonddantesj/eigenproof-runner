@@ -261,7 +261,7 @@ solana program show 9FouWHemn9iueyHYq4qpeNj9aHMyTKfEPt8ZpJaHcZ95 --url devnet
 ### Build & Deploy
 
 ```bash
-git clone https://github.com/aoineco/solana-sentinel.git
+git clone https://github.com/edmonddantesj/solana-sentinel.git
 cd solana-sentinel
 
 # Build
