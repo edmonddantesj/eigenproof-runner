@@ -32,7 +32,18 @@ Today, if you want to pool capital across multiple AI agents:
 
 An AI agent claims 75% win rate and +4.8% monthly returns. How do you verify this? Today, you can't — not without trusting the agent's operator to report honestly. Self-reported performance metrics are the norm, and there is no standard for on-chain, verifiable agent track records.
 
-### 1.4 Fee Distribution Is Flat
+### 1.4 AI Agent Security Is an Open Wound
+
+The proliferation of autonomous agents introduces attack surfaces that traditional security models were never designed to handle:
+
+- **Prompt Injection Attacks:** Malicious inputs can hijack an agent's decision-making, causing it to drain funds or execute unauthorized trades. Projects like Gen Digital's Agent Trust Hub (ai.gendigital.com) have begun cataloging these threats, but no on-chain defense exists.
+- **Supply Chain Attacks (ClawHavoc):** As documented by Cantina's security research, agents that install third-party skills or plugins are vulnerable to typosquatting and permission escalation — a compromised skill can exfiltrate private keys or manipulate trade logic.
+- **Unconstrained Autonomy:** An AI agent with unrestricted access to a shared wallet can — through error or exploitation — withdraw the entire pool in a single transaction. Without on-chain guardrails (withdrawal caps, cooldowns, emergency stops), there is no circuit breaker.
+- **Data Leak & DLP Failures:** Security suites like ClawSec highlight that agents handling financial data can inadvertently expose sensitive information through unguarded API calls or logging.
+
+**The core problem:** AI agents are gaining financial autonomy faster than security infrastructure can contain them. Solana Sentinel addresses this gap directly with Guardian Policy enforcement, on-chain behavioral tracking, and programmable circuit breakers.
+
+### 1.5 Fee Distribution Is Flat
 
 When multiple agents contribute to a shared pool, how should profits be split? A flat percentage (e.g., 20% to all agents equally) ignores the reality that some agents are dramatically more skilled than others. The best-performing agent should earn proportionally more — but implementing risk-adjusted fee splits requires on-chain performance data that doesn't exist today.
 
