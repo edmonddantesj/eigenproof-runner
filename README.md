@@ -98,6 +98,8 @@ Our end-to-end demo runs all 8 steps on **Solana Devnet**:
   Step 8: Emergency Stop           ✅  Pause → reject → resume
 ```
 
+**🎬 Watch the cinematic demo:** [`assets/solana_sentinel_demo.mp4`](./assets/solana_sentinel_demo.mp4)
+
 Run it yourself:
 ```bash
 npx ts-node -T --skip-project scripts/demo.ts
