@@ -1,0 +1,11 @@
+/Users/silkroadcat/.openclaw/workspace/solana-sentinel/target/debug/deps/borsh-790e3f923e0c9c97.d: /Users/silkroadcat/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-0.9.3/src/lib.rs /Users/silkroadcat/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-0.9.3/src/de/mod.rs /Users/silkroadcat/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-0.9.3/src/de/hint.rs /Users/silkroadcat/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-0.9.3/src/schema.rs /Users/silkroadcat/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-0.9.3/src/schema_helpers.rs /Users/silkroadcat/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-0.9.3/src/ser/mod.rs /Users/silkroadcat/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-0.9.3/src/ser/helpers.rs
+
+/Users/silkroadcat/.openclaw/workspace/solana-sentinel/target/debug/deps/libborsh-790e3f923e0c9c97.rmeta: /Users/silkroadcat/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-0.9.3/src/lib.rs /Users/silkroadcat/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-0.9.3/src/de/mod.rs /Users/silkroadcat/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-0.9.3/src/de/hint.rs /Users/silkroadcat/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-0.9.3/src/schema.rs /Users/silkroadcat/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-0.9.3/src/schema_helpers.rs /Users/silkroadcat/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-0.9.3/src/ser/mod.rs /Users/silkroadcat/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-0.9.3/src/ser/helpers.rs
+
+/Users/silkroadcat/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-0.9.3/src/lib.rs:
+/Users/silkroadcat/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-0.9.3/src/de/mod.rs:
+/Users/silkroadcat/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-0.9.3/src/de/hint.rs:
+/Users/silkroadcat/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-0.9.3/src/schema.rs:
+/Users/silkroadcat/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-0.9.3/src/schema_helpers.rs:
+/Users/silkroadcat/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-0.9.3/src/ser/mod.rs:
+/Users/silkroadcat/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/borsh-0.9.3/src/ser/helpers.rs:

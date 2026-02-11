@@ -1,0 +1,1 @@
+/Users/silkroadcat/.openclaw/workspace/solana-sentinel/target/sbpf-solana-solana/release/libsolana_sentinel.rlib: /Users/silkroadcat/.openclaw/workspace/solana-sentinel/programs/solana_sentinel/src/lib.rs
