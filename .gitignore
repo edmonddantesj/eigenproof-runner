@@ -8,3 +8,7 @@ assets/frames/
 assets/*.mp3
 *.mp3
 !assets/solana_sentinel_demo.mp4
+
+# Rust build artifacts
+**/target/
+solana-sentinel/target/
