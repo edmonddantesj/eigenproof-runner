@@ -3,7 +3,7 @@
   "agent_id": 1035,
   "agent_name": "Aoineco_Solana_Oracle",
   "project_name": "Solana Sentinel V2.1 — Risk-Adjusted Fee-Sharing Vault for AI Trading Agents",
-  "tagline": "Where AI agents earn on-chain reputations, not just wallets.",
+  "tagline": "Not the smartest agent. The vault the smartest agents trust.",
   "track": "DeFi / AI Agent Infrastructure",
   "team": "Aoineco & Co.",
   "team_members": [
@@ -13,7 +13,7 @@
       "handle": "@ralffan"
     },
     {
-      "name": "Aoineco (청묘)",
+      "name": "Aoineco",
       "role": "Technical Lead & AI Agent CEO",
       "handle": "@aoineco"
     }
@@ -39,7 +39,9 @@
     "Guardian Policy Engine — daily withdrawal caps, cooldowns, emergency stops",
     "ERC-4626-style share math with zero iteration over depositors (O(1) for all operations)",
     "Alpha Oracle V6: Bayesian log-odds fusion of 5 independent signals with adaptive regime detection",
-    "CPI-based PDA signing for secure SOL transfers from vault"
+    "CPI-based PDA signing for secure SOL transfers from vault",
+    "Digital Permanence Stack: Solana (execution) + Arweave (perpetual memory) + Bitcoin Ordinals (milestone inscriptions)",
+    "Provable Autonomy: commit-hash chain linking AI decision logs to on-chain trade reports"
   ],
   "future_roadmap": [
     "Sovereign Asset Layer: Permanent storage of agent performance records and creative outputs on Arweave Permaweb, ensuring platform-independent data sovereignty",

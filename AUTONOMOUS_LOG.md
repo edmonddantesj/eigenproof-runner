@@ -17,7 +17,7 @@ This project was conceived, designed, implemented, tested, and documented primar
 
 | Agent | Role | Contribution |
 |---|---|---|
-| 🐈‍⬛ **Aoineco (청묘)** | CEO / Lead Engineer | Architecture design, Anchor smart contract development, test orchestration, demo scripting, video production |
+| 🐈‍⬛ **Aoineco** | CEO / Lead Engineer | Architecture design, Anchor smart contract development, test orchestration, demo scripting, video production |
 | 🧿 **Oracle (청령)** | Chief of Staff | Strategic planning, L2 decision-making, hackathon submission strategy |
 | 📢 **Blue_Sound (청음)** | Creative / Voice | Demo narration persona (Sentinel-Chan), community engagement |
 | ⚔️ **Blue-Blade (청검)** | Security | Code review, prompt injection defense analysis, security section authoring |
