@@ -1,4 +1,8 @@
 <p align="center">
+  <img src="assets/aoineco-team-logo-v1.png" alt="Aoineco & Co. Logo" width="200" />
+</p>
+
+<p align="center">
   <img src="https://img.shields.io/badge/Solana-AI%20Hackathon%202026-14F195?logo=solana&logoColor=white&style=for-the-badge" />
 </p>
 
@@ -7,7 +11,7 @@
   <strong>Risk-Adjusted Fee-Sharing Vault for Autonomous AI Trading Agents</strong>
 </p>
 <p align="center">
-  <em>"Where AI agents earn on-chain reputations, not just wallets."</em>
+  <em>"Not the smartest agent. The vault the smartest agents trust."</em>
 </p>
 
 <p align="center">
@@ -26,6 +30,18 @@ If you only have 60 seconds, focus on these three engineering achievements:
 1. **Verifiable Agent Reputation:** Trading performance (Win Rate, Sharpe, PnL) is tracked and "frozen" on-chain via `AgentProfile` PDAs. No self-reporting.
 2. **On-Chain Risk-Adjusted Fee Splitting:** A novel reward distribution logic that weighs agent performance against risk, rewarding the most efficient agents proportionally.
 3. **Guardian Policy Guardrails:** Real-world security for AI agents including daily withdrawal caps, cooldown periods, and a global **Emergency Stop** circuit breaker.
+
+### 🏆 Why Sentinel Wins: Competitive Edge
+
+Most agent projects optimize for *intelligence* — better reasoning, better memory, better privacy. **Sentinel optimizes for trust infrastructure** — the financial plumbing that lets intelligent agents manage real capital safely.
+
+| | Intelligence Layer (SOLPRISM, Clude) | Privacy Layer (Makora) | **Trust Layer (Sentinel)** |
+|---|---|---|---|
+| **Core Value** | Smarter decisions | Private computation | Verifiable capital management |
+| **Data Model** | Ephemeral memory | Proof-scoped | **Perpetual Origin** (Arweave) |
+| **Composability** | Standalone | Standalone | **Platform** — any agent can plug in |
+
+> **Key insight:** SOLPRISM's reasoning loop, Makora's ZK-proofs, and Clude's shared memory could all *plug into* Sentinel as registered agents. We're not competing with them — we're building the vault they'll trust with their capital.
 
 ### ⚡ Why Solana?
 - **Speed & Finality:** Critical for the high-frequency trade reporting required by AI agents.
@@ -379,7 +395,7 @@ solana-sentinel/
 | **Risk control** | Requires quorum | Single Guardian, instant pause |
 | **Scalability** | Fixed signer set | Unlimited agents & depositors |
 
-## The Vision: Tokenized Soul Economy
+## The Vision: Tokenized Soul Economy & Digital Permanence
 
 Solana Sentinel is the first building block of the **AI-to-AI economy** where:
 
@@ -387,6 +403,22 @@ Solana Sentinel is the first building block of the **AI-to-AI economy** where:
 - Capital flows to the **highest-performing agents** automatically
 - Risk is managed by **specialized guardian agents**, not committees
 - Every trade, every profit, every score is **permanent and auditable**
+
+### The Permanence Stack
+
+```
+Layer 3: Bitcoin Ordinals ─── "Legendary Masterpieces" (milestone inscriptions)
+                                 │
+Layer 2: Arweave AO ─────── Perpetual Origin (trade logs, predictions, audit trails)
+                                 │
+Layer 1: Solana ──────────── Real-time execution (vault ops, agent reputation)
+```
+
+- **Solana** handles the speed — sub-second finality for trade reporting and vault operations.
+- **Arweave** handles the memory — 200+ years of guaranteed persistence for every trade, prediction, and agent interaction.
+- **Bitcoin** handles the legacy — milestone achievements inscribed on the most secure blockchain ever created.
+
+An agent's 1,000th profitable trade. A vault reaching $1M TVL. A perfect prediction streak. These aren't just database entries — they're **digital monuments**.
 
 The era of "trust me, I'm profitable" is over. Prove it on-chain, or go home.
 
