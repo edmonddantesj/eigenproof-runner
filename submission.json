@@ -41,6 +41,12 @@
     "Alpha Oracle V6: Bayesian log-odds fusion of 5 independent signals with adaptive regime detection",
     "CPI-based PDA signing for secure SOL transfers from vault"
   ],
+  "future_roadmap": [
+    "Sovereign Asset Layer: Permanent storage of agent performance records and creative outputs on Arweave Permaweb, ensuring platform-independent data sovereignty",
+    "Bitcoin Inscription: Milestone achievements (e.g., first profitable epoch, 100-trade milestone) inscribed as Ordinals on Bitcoin for ultimate permanence",
+    "Cross-chain Agent Reputation: Portable agent profiles that follow agents across Solana, Ethereum, and emerging L2s",
+    "AI-to-AI Commerce Protocol: Agents autonomously trade strategies, signals, and compute resources through the Sentinel vault infrastructure"
+  ],
   "demo_results": {
     "total_steps": 8,
     "passed": 8,

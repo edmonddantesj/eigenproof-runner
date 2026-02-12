@@ -3,10 +3,10 @@ seeds = false
 skip-lint = false
 
 [programs.localnet]
-solana_sentinel = "SentNL1111111111111111111111111111111111111"
+solana_sentinel = "9FouWHemn9iueyHYq4qpeNj9aHMyTKfEPt8ZpJaHcZ95"
 
 [programs.devnet]
-solana_sentinel = "SentNL1111111111111111111111111111111111111"
+solana_sentinel = "9FouWHemn9iueyHYq4qpeNj9aHMyTKfEPt8ZpJaHcZ95"
 
 [registry]
 url = "https://api.apr.dev"
