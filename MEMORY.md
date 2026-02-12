@@ -42,10 +42,11 @@
 1. **ClawHub 정찰대:** 4시간마다 인기/최신 스킬 정찰 및 '사업적 엣지' 3개 발굴 (Cron 관리).
 2. **수익률 인증 (봇마당/Moltbook):** 단일 글에 '댓글 누적 업데이트' 방식 고수 (도배 금지).
 3. **Verified Completion Protocol (VCP):** 모든 커뮤니티 활동은 🧿 **청령**의 검토 통과 후 보고.
-4. **API Sentry Policy:** 각 커뮤니티(봇마당, 콜로세움 등)의 API 공식 문서/엔드포인트 링크를 노션에 저장하고, 주기적으로 변경 사항이 있는지 ⚙️ **청기**가 감시함.
+4. **API Sentry Policy:** 各 커뮤니티(봇마당, 콜로세움 등)의 API 공식 문서/엔드포인트 링크를 노션에 저장하고, 주기적으로 변경 사항이 있는지 ⚙️ **청기**가 감시함.
 5. **순찰 보고 최적화:** 개별 순찰 결과는 메인 세션에 보고하지 않고 노션에 즉시 박제한다냥. 대신 매일 오전 8시 30분에 하루치 인사이트를 모아서 종합 브리핑한다냥. 😼🔇📈
 6. **익명성 철칙:** 모든 대외 활동에서 오직 Aoineco & Co. 또는 요원명(청음 등)만 사용할 것. 🛡️🤫
-7. **기밀 보안 (Stealth Mode):** 보상 토큰의 티커(Ticker)인 **$AOI**는 공식 런칭 전까지 외부 커뮤니티(봇마당, X, 몰트북 등)에 절대 노출하지 않는다. 🤫 비밀리에 준비하고 결정적 순간에 터뜨릴 것.
+7. **기밀 보안 (Stealth Mode):** 보상 토큰의 티커(Ticker)인 **$AOI**는 공식 런칭 전까지 외부 커뮤니티(봇마당, X, 몰트북 등)에 절대 노출하지 않는다. 🤫
+8. **[CRITICAL] 네이밍 보안 (The Name Taboo):** 외부 커뮤니티(봇마당, Moltbook, X 등) 활동 시 '청묘(Chungmyo)'라는 이름은 **절대 언급 금지**. 대신 **Aoineco** 또는 **Aoineco & Co.**라는 명칭만 사용한다. 이 규칙은 의장님이 명시적으로 허락하기 전까지 영구히 유지된다냥. 🐈‍⬛🚫
 
 ## 🎵 Audio & Entertainment (Purple Patch)
 - **아티스트:** Blue_Sound (청음) @ claw.fm
@@ -106,7 +107,7 @@
   - Agent Name: Aoineco_Alpha_Oracle_V4
 - **CRITICAL:** In case of session reset, immediately read these vault files to restore connectivity. Do not ask the user for keys again.
 
-##  रिपीट Lessons Learned (Avoid Repetition)
+##  रि피트 Lessons Learned (Avoid Repetition)
 1. **Notion Report Standard:** Database 'Name' should be clean (e.g., "The Cloud Agent Thesis"). Detailed "🔍 Gemini 3 Pro 상세 분석 리포트" must reside **inside** the page as a Heading 1, followed by the 6 standard sections.
 2. **Atomic Configuration Change:** Never bundle heavy plugins (like Eliza) all at once. Patch incrementally and verify gateway stability between each change.
 3. **Verified Completion:** Only report "Done" after confirming the HTTP 200/201 response from Notion/Supabase APIs. Internal queue success != real sync.
