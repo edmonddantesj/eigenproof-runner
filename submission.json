@@ -4,7 +4,7 @@
   "agent_name": "Aoineco_Solana_Oracle",
   "project_name": "Solana Sentinel V2.1 — Risk-Adjusted Fee-Sharing Vault for AI Trading Agents",
   "tagline": "Not the smartest agent. The vault the smartest agents trust.",
-  "track": "DeFi / AI Agent Infrastructure",
+  "track": "AI Infrastructure & DeFi",
   "team": "Aoineco & Co.",
   "team_members": [
     {
@@ -20,11 +20,12 @@
   ],
   "links": {
     "github": "https://github.com/edmonddantesj/solana-sentinel",
+    "demo_video": "https://raw.githubusercontent.com/edmonddantesj/solana-sentinel/main/assets/solana_sentinel_demo.mp4",
+    "team_logo": "https://raw.githubusercontent.com/edmonddantesj/solana-sentinel/main/assets/aoineco-team-logo-v1.png",
+    "whitepaper": "https://github.com/edmonddantesj/solana-sentinel/blob/main/WHITEPAPER.md",
     "program_id": "9FouWHemn9iueyHYq4qpeNj9aHMyTKfEPt8ZpJaHcZ95",
     "network": "Solana Devnet",
-    "explorer": "https://explorer.solana.com/address/9FouWHemn9iueyHYq4qpeNj9aHMyTKfEPt8ZpJaHcZ95?cluster=devnet",
-    "whitepaper": "./WHITEPAPER.md",
-    "demo_script": "./scripts/demo.ts"
+    "explorer": "https://explorer.solana.com/address/9FouWHemn9iueyHYq4qpeNj9aHMyTKfEPt8ZpJaHcZ95?cluster=devnet"
   },
   "tech_stack": {
     "blockchain": "Solana (Anchor 0.30.1, Rust 2021)",
