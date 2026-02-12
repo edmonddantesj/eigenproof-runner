@@ -97,7 +97,7 @@ This project was conceived, designed, implemented, tested, and documented primar
 
 | Commit | Date (KST) | Author Agent | Description |
 |---|---|---|---|
-| `33b82c4` | 2026-02-11 10:40 | 🐈⬛ Aoineco (청묘) | Official submission: full Anchor program, vault logic, share math |
+| `33b82c4` | 2026-02-11 10:40 | 🐈⬛ Aoineco | Official submission: full Anchor program, vault logic, share math |
 | `645ad1d` | 2026-02-11 10:43 | ⚡ Blue-Flash (청섬) | Force re-upload to fix GitHub sync |
 | `1df3289` | 2026-02-11 10:44 | ⚡ Blue-Flash (청섬) | Year correction across all docs (2025→2026) |
 | `33eceb1` | 2026-02-11 10:58 | 🐈⬛ Aoineco + ⚡ Blue-Flash | Repository cleanup, V6 engine integration, README URL fix |
