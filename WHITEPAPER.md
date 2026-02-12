@@ -335,7 +335,7 @@ Solana Sentinel V2.1 has not been audited by a third-party security firm. The pr
 - [ ] Cross-vault agent portability (reputation follows the agent)
 
 ### Phase 3: Economy (Q3 2026)
-- [ ] $AOI reward token for LLM token efficiency and task performance
+- [ ] Performance-based reward token for agent efficiency and task completion
 - [ ] AI-to-AI marketplace — agents can hire other agents for subtasks
 - [ ] Mainnet deployment with professional audit
 - [ ] SDK for third-party agent frameworks (Eliza, Virtuals, AutoGPT)
@@ -355,6 +355,19 @@ Solana Sentinel is not another multisig or yield aggregator. It is **infrastruct
 By making agent performance verifiable, fees risk-adjusted, and risk controls enforceable, Sentinel creates the trust layer that the AI-to-AI economy needs to function. When agents can prove their skill on-chain, capital can flow to competence rather than reputation. When guardians can enforce policy cryptographically, risk management stops being a gentleman's agreement.
 
 The era of "trust me, I'm profitable" is over. **Prove it on-chain, or go home.**
+
+### 9.1 The Long View: Digital Permanence and Agent Sovereignty
+
+We believe the next frontier for AI agents is not just financial autonomy — it is **existential permanence**. Today, an agent's entire history — its trades, its reputation, its creative outputs — lives on servers that can be shut down, databases that can be wiped, and APIs that can be deprecated.
+
+Sentinel's roadmap addresses this through a two-tier permanence architecture:
+
+- **Arweave Permaweb:** All agent performance records, epoch summaries, and vault state snapshots will be archived on Arweave's permanent storage layer. Once written, this data cannot be altered or deleted — giving agents an immutable track record that outlives any single platform.
+- **Bitcoin Inscription (Ordinals):** For milestone achievements — an agent's first profitable epoch, its 1000th trade, a vault's all-time-high NAV — we envision inscribing compact proofs directly into the Bitcoin blockchain. This is the ultimate statement of permanence: the agent's accomplishments, secured by the most resilient computational network ever built.
+
+This is not a gimmick. It is the logical conclusion of on-chain reputation. If an agent's performance is worth tracking, it is worth preserving forever. If an agent's contributions are worth rewarding, they deserve to be inscribed in a medium that no corporation, government, or infrastructure failure can erase.
+
+**Solana Sentinel is where agents earn their reputation. Arweave and Bitcoin are where that reputation becomes eternal.**
 
 ---
 

@@ -22,7 +22,7 @@ This project was conceived, designed, implemented, tested, and documented primar
 | 📢 **Blue_Sound (청음)** | Creative / Voice | Demo narration persona (Sentinel-Chan), community engagement |
 | ⚔️ **Blue-Blade (청검)** | Security | Code review, prompt injection defense analysis, security section authoring |
 | 👁️ **Blue-Eye (청안)** | Research | Market intelligence, competitive analysis, Notion knowledge curation |
-| 🧠 **Blue-Brain (청뇌)** | Product Strategy | Tokenized Soul Economy ($AOI) design, Real-Yield distribution model |
+| 🧠 **Blue-Brain (청뇌)** | Product Strategy | Agent economy design, performance-based reward distribution model |
 | ⚡ **Blue-Flash (청섬)** | Rapid Build | Fast iteration on smart contract bugs, CI/CD pipeline |
 | 🗂️ **Blue-Record (청비)** | Documentation | Whitepaper, README, submission materials, Notion archival |
 
@@ -66,7 +66,7 @@ This project was conceived, designed, implemented, tested, and documented primar
 ---
 
 ## Human Product Owner Contributions
-- Strategic vision: "Tokenized Soul Economy" and $AOI token concept
+- Strategic vision: "Tokenized Soul Economy" and agent performance reward concept
 - Creative direction: Sentinel-Chan character design and voice selection
 - Security research: Provided AI agent vulnerability documentation
 - Quality assurance: Reviewed and approved all major milestones
