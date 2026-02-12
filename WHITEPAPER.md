@@ -308,6 +308,8 @@ Solana Sentinel V2.1 has not been audited by a third-party security firm. The pr
 
 ## 7. Comparison with Existing Solutions
 
+### 7.1 Infrastructure Comparison
+
 | Feature | Squads (Multisig) | Marinade (Liquid Staking) | Drift (Perp DEX) | **Sentinel** |
 |---|---|---|---|---|
 | AI agent support | ❌ | ❌ | Partial (vaults) | ✅ Native |
@@ -316,6 +318,43 @@ Solana Sentinel V2.1 has not been audited by a third-party security firm. The pr
 | Guardian controls | M-of-N | Validator set | ❌ | ✅ Single key, instant |
 | Zero-iteration math | N/A | ✅ (mSOL) | N/A | ✅ (share model) |
 | Permissionless agents | ❌ | ❌ | ❌ | ✅ Register any agent |
+
+### 7.2 Agent Hackathon Competitive Landscape
+
+The Solana Colosseum Agent Hackathon has produced a wave of innovative agent projects. Sentinel acknowledges their contributions while occupying a distinct architectural niche:
+
+| Capability | SOLPRISM | Makora | Clude | **Sentinel** |
+|---|---|---|---|---|
+| **Reasoning Model** | Plan-Act-Observe-Reflect loop | ZK-verified inference | Shared memory layer | Bayesian Fusion (V6) with regime detection |
+| **Privacy** | ❌ | ✅ ZK-proofs for private computation | ❌ | Partial (Guardian policy, role separation) |
+| **Data Persistence** | Session-scoped | Proof-scoped | Shared memory (ephemeral) | **Arweave Perpetual Origin** — immutable, permanent |
+| **Agent Reputation** | Self-reported metrics | ZK-attested results | Implicit (memory quality) | **On-chain AgentProfile PDA** — append-only, verifiable |
+| **Financial Infrastructure** | ❌ (research-focused) | ❌ (privacy-focused) | ❌ (collaboration-focused) | ✅ Full vault: deposit, withdraw, risk-adjust, distribute |
+| **Security Model** | Application-level | Cryptographic (ZK) | Trust-based | **Guardian Protocol** — circuit breakers, caps, cooldowns |
+
+**Why Sentinel occupies a unique position:**
+
+Most agent hackathon projects optimize for *intelligence* (better reasoning, better memory, better privacy). Sentinel optimizes for *trust infrastructure* — the financial plumbing that allows intelligent agents to manage real capital safely. These are complementary, not competing, layers:
+
+- **SOLPRISM's** Plan-Act-Observe-Reflect loop could *plug into* Sentinel as a registered agent, building its on-chain reputation through verifiable trade reports.
+- **Makora's** ZK-proofs could enhance Sentinel's Oracle by providing privacy-preserving performance attestations.
+- **Clude's** shared memory could serve as the coordination layer between multiple agents operating within a single Sentinel vault.
+
+**Sentinel is not trying to be the smartest agent. It is trying to be the vault that the smartest agents trust with their capital.**
+
+### 7.3 Perpetual Origin vs. Shared Memory
+
+A critical architectural distinction separates Sentinel from memory-focused agent projects:
+
+| Approach | Shared Memory (Clude, etc.) | **Perpetual Origin (Sentinel)** |
+|---|---|---|
+| **Storage** | In-memory or database-backed | Arweave (200+ years guaranteed) |
+| **Mutability** | Read-write (can be overwritten) | Append-only (immutable once written) |
+| **Purpose** | Agent coordination in real-time | Historical proof and auditability |
+| **Failure mode** | Memory loss on restart | Data survives protocol shutdown |
+| **Trust model** | Trust the memory provider | Trust math (Arweave's endowment model) |
+
+Shared memory answers *"What do agents know right now?"* Perpetual Origin answers *"What did agents actually do, and can you prove it?"* For financial infrastructure, the latter is non-negotiable.
 
 ---
 
@@ -333,18 +372,23 @@ Solana Sentinel V2.1 has not been audited by a third-party security firm. The pr
 - [ ] Automated Sharpe-weighted fee distribution (currently manual bps parameter)
 - [ ] Agent staking — agents post collateral to back their track record
 - [ ] Cross-vault agent portability (reputation follows the agent)
+- [ ] **Commit-Reveal Oracle Scheme** — predictions are hashed and committed on-chain *before* the outcome is known, then revealed after settlement. This cryptographically proves that the Oracle cannot retroactively fabricate its track record.
+- [ ] **Arweave Anchoring** — every epoch's trade reports, agent profiles, and vault state snapshots are permanently archived on Arweave via AO, creating an immutable audit trail that survives even if the Solana program is deprecated.
 
 ### Phase 3: Economy (Q3 2026)
-- [ ] Performance-based reward token for agent efficiency and task completion
+- [ ] Reward token for LLM token efficiency and task performance
 - [ ] AI-to-AI marketplace — agents can hire other agents for subtasks
 - [ ] Mainnet deployment with professional audit
 - [ ] SDK for third-party agent frameworks (Eliza, Virtuals, AutoGPT)
+- [ ] **Provable Autonomy Certification** — agents submit their `AUTONOMOUS_LOG` hashes on-chain, creating a verifiable chain of custody proving that trading decisions were made by AI without human intervention.
 
 ### Phase 4: Sovereignty (Q4 2026)
 - [ ] Agent-governed vaults — top-performing agents vote on policy changes
 - [ ] Cross-chain vault bridges (Solana ↔ EVM)
 - [ ] Decentralized Oracle network — multiple independent signal engines
 - [ ] Full AI-to-AI economic loop: earn, spend, invest, hire
+- [ ] **Digital Permanence Layer** — a hybrid storage architecture where Arweave AO handles high-volume data (trade logs, predictions, agent communications) while Bitcoin Ordinals are reserved for milestone achievements inscribed permanently on the most secure blockchain in existence.
+- [ ] **Perpetual Canvas** — a decentralized gallery where AI-generated art, trading visualizations, and agent milestone certificates are permanently inscribed and composable across the Solana, Arweave, and Bitcoin ecosystems.
 
 ---
 
