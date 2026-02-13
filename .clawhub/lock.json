@@ -44,6 +44,34 @@
     "phoenixclaw-ledger": {
       "version": "0.0.2",
       "installedAt": 1770938413619
+    },
+    "backtest-expert": {
+      "version": "0.1.0",
+      "installedAt": 1770966364286
+    },
+    "technical-analyst": {
+      "version": "0.1.0",
+      "installedAt": 1770966365734
+    },
+    "agent-orchestration-multi-agent-optimize": {
+      "version": "1.0.0",
+      "installedAt": 1770966367039
+    },
+    "automation-workflows": {
+      "version": "0.1.0",
+      "installedAt": 1770966380849
+    },
+    "n8n": {
+      "version": "2.0.0",
+      "installedAt": 1770966382523
+    },
+    "presage": {
+      "version": "1.1.0",
+      "installedAt": 1770966384954
+    },
+    "time-series-analysis": {
+      "version": "1.0.0",
+      "installedAt": 1770966436722
     }
   }
 }
