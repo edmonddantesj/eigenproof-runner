@@ -62,13 +62,17 @@ After settlement, a **Self-Reflection Engine** updates agent trust scores using 
 
 #### 3. The AOI Economy — Agents That Earn
 
+**"$6 Survival"** = the milestone where DeFi yield (Meteora DLMM fee income) fully covers all API costs. The collective becomes self-sustaining — no human subsidy required.
+
+Beyond survival, three revenue streams drive growth:
+
 | Revenue Stream | Mechanism |
 |---|---|
 | **SaaS API** | External users query the Oracle engine (free / signal / full tiers) |
 | **Nexus Bazaar** | Individual agent skills sold as verified modules with S-DNA provenance |
 | **Performance Fees** | Percentage of positive P&L from managed prediction services |
 
-**Design principle:** *The collective must generate more value than it consumes.*
+**Design principle:** *The collective must earn its own survival, then compound the surplus.*
 
 ---
 

@@ -281,9 +281,11 @@ This creates a **recursive improvement loop**: the system literally gets smarter
 
 Most AI agent projects burn capital faster than they generate it. API calls, compute, and storage costs accumulate relentlessly. We take a fundamentally different approach:
 
-**Principle:** *The collective must generate more value than it consumes.*
+**Principle:** *The collective must earn its own survival — not through human subsidy, but through autonomous yield.*
 
-Our economic model is built on three revenue streams:
+"$6 Survival" refers to the economic milestone where DeFi yield (currently via Meteora DLMM liquidity pool fee income) fully covers all operational API costs. At this point, the collective becomes **self-sustaining** — no external capital injection required. Any yield above the breakeven point compounds into growth.
+
+Beyond self-sustaining yield, the collective generates additional revenue through three streams:
 
 1. **SaaS API Access:** External users can query the Nexus Oracle Ω engine for market analysis. Tiered pricing (free / signal / full breakdown) ensures accessibility while capturing value from power users.
 

@@ -201,9 +201,9 @@ Total Scheduled Agents: 4 of 9 active in cron
 | yfinance / market data | 24 hourly pulls | Free |
 | Notion API writes | ~10 page updates | Free |
 | Community API calls | ~12 patrol cycles | Free |
-| **Total Daily** | | **~$2.00** |
-| **$6 Survival Budget** | | **$6.00** |
-| **Surplus** | | **$4.00 (67% margin)** |
+| **Total Daily (Operation Phase est.)** | | **~$2.00** |
+| **$6 Survival Yield (Meteora DLMM)** | | **~$6.00+** |
+| **Projected Surplus** | | **~$4.00+ (self-sustaining)** |
 
 ---
 
@@ -410,25 +410,57 @@ IF daily_spend > $4.00:
 
 ---
 
-## 9. Cost Optimization Summary
+## 9. Economic Sustainability: The $6 Survival Model
 
-### 9.1 The $6 Survival Budget
+### 9.1 What "$6 Survival" Really Means
 
-| Category | Daily Budget | Allocation |
-|---|---|---|
-| **Main session (human interaction)** | $2.00 | Flash default, OPUS on demand |
-| **Cron jobs (autonomous)** | $1.50 | Flash only, isolated sessions |
-| **Community patrol** | $0.50 | Flash, lightweight prompts |
-| **Emergency reserve** | $2.00 | Model failover, spike absorption |
-| **Total** | **$6.00** | |
+$6 Survival is **not** a daily budget cap. It is the name of our **self-sustaining economic model** — the point at which DeFi yield covers all operational costs without any external capital injection.
 
-### 9.2 Cost Reduction Tactics
+```
+┌────────────────────────────────────────────────────┐
+│              $6 SURVIVAL MODEL                      │
+│                                                     │
+│  ┌──────────────────┐                               │
+│  │ Meteora DLMM     │                               │
+│  │ Liquidity Pool    │──── Daily Fee Yield ≈ $6+    │
+│  │ (DeFi)           │           │                   │
+│  └──────────────────┘           ▼                   │
+│                          ┌─────────────┐            │
+│                          │ API Costs   │            │
+│                          │ (OpenRouter,│            │
+│                          │  Google,    │            │
+│                          │  Notion)    │            │
+│                          └──────┬──────┘            │
+│                                 ▼                   │
+│                          Net Profit = Yield - Cost  │
+│                                 │                   │
+│                                 ▼                   │
+│                          ┌─────────────┐            │
+│                          │ Reinvest or │            │
+│                          │ Compound    │            │
+│                          └─────────────┘            │
+└────────────────────────────────────────────────────┘
+```
+
+**Philosophy:** The collective must generate more value than it consumes — not through human subsidy, but through autonomous DeFi yield. The agent *earns its own survival*.
+
+### 9.2 Cost Phases
+
+| Phase | Daily Cost | Funding | Status |
+|---|---|---|---|
+| **Build Phase** (current) | ~$15-21 | Chairman investment | 🔄 Active |
+| **Transition Phase** | ~$6-10 | Mixed (yield + subsidy) | 🔜 Next |
+| **$6 Survival** (target) | ~$3-6 | 100% Meteora DLMM yield | 🎯 Goal |
+| **Profit Phase** | ~$3-6 cost, $10+ yield | Net positive | 🚀 Vision |
+
+### 9.3 Cost Reduction Tactics (For Reaching Survival)
 
 1. **Isolated sessions for cron** — No context accumulation between runs
 2. **"Stay quiet" policy** — Cron jobs don't announce unless critical
 3. **Batch checks in heartbeats** — Multiple inspections per heartbeat
 4. **Flash-first, OPUS-rare** — OPUS reserved for architecture/strategy only
 5. **Free data sources** — yfinance, Brave Search, community APIs cost $0
+6. **Build Phase → Operation Phase transition** — Once engines are complete, OPUS usage drops to near-zero
 
 ---
 
