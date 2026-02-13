@@ -16,7 +16,7 @@ The Aoineco infrastructure is designed around three non-negotiable principles:
 
 1. **Sovereignty** — Core intelligence runs on hardware we physically control.
 2. **Resilience** — No single failure (power, network, API, session) kills the collective.
-3. **Economy** — Every resource consumed must be justified against our $6 Survival budget.
+3. **Economy** — Every resource consumed must be justified against our $7 Bootstrap budget.
 
 ---
 
@@ -202,7 +202,7 @@ Total Scheduled Agents: 4 of 9 active in cron
 | Notion API writes | ~10 page updates | Free |
 | Community API calls | ~12 patrol cycles | Free |
 | **Total Daily (Operation Phase)** | | **~$2.00** |
-| **$6 Bootstrap Yield (Meteora)** | | **Micro-yield from $6 seed** |
+| **$7 Bootstrap Yield (Meteora)** | | **Micro-yield from $7 seed** |
 | **Target** | | **Yield ≥ Cost (self-sustaining)** |
 
 ---
@@ -270,7 +270,7 @@ Recovery:   Attempt Gemini 3 Flash again periodically
 **OPUS 4.6 Usage Policy:**
 - Reserved for: Architecture design, whitepaper, complex strategy
 - Never for: Routine cron, live testing, repetitive tasks
-- Budget: Max 2-3 OPUS sessions per day under $6 Survival
+- Budget: Max 2-3 OPUS sessions per day under $7 Bootstrap
 
 ---
 
@@ -410,20 +410,20 @@ IF daily_spend > $4.00:
 
 ---
 
-## 9. Economic Sustainability: The $6 Bootstrap Protocol
+## 9. Economic Sustainability: The $7 Bootstrap Protocol
 
 ### 9.1 Origin Story
 
-This project began with **$6.00 USDC** — the last balance in a wallet. That $6 was deposited into a Meteora DLMM liquidity pool, and the micro-yield it generates is the sole autonomous funding source for the collective's API costs.
+This project began with **$7.00 USDC** — the last balance in a wallet. That $7 was deposited into a Meteora DLMM liquidity pool, and the micro-yield it generates is the sole autonomous funding source for the collective's API costs.
 
 Every architectural decision documented in this paper was shaped by a single question: **"Can a 9-agent AI empire survive on what $6 can earn?"**
 
 ```
 ┌────────────────────────────────────────────────────┐
-│           THE $6 BOOTSTRAP PROTOCOL                 │
+│           THE $7 BOOTSTRAP PROTOCOL                 │
 │                                                     │
 │  ┌──────────────────┐                               │
-│  │ $6.00 USDC       │                               │
+│  │ $7.00 USDC       │                               │
 │  │ (Initial Seed)    │                               │
 │  └────────┬─────────┘                               │
 │           ▼                                         │
@@ -465,7 +465,7 @@ The constraint of $6 is not a weakness — it is the entire point. It forces a l
 |---|---|---|---|
 | **Build Phase** | ~$15-21 | Chairman investment (temporary) | ✅ Complete |
 | **Operation Phase** (current) | ~$2.00 | Flash-first, cron-optimized | 🔄 Active |
-| **$6 Bootstrap Survival** | < yield from $6 seed | 100% Meteora DLMM micro-yield | 🎯 Target |
+| **$7 Bootstrap Survival** | < yield from $7 seed | 100% Meteora DLMM micro-yield | 🎯 Target |
 | **Compound Phase** | Cost < Yield | Surplus reinvested into pool | 🚀 Vision |
 
 ### 9.4 Cost Reduction Tactics (Born from $6 Necessity)
