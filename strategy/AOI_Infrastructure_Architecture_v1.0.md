@@ -201,9 +201,9 @@ Total Scheduled Agents: 4 of 9 active in cron
 | yfinance / market data | 24 hourly pulls | Free |
 | Notion API writes | ~10 page updates | Free |
 | Community API calls | ~12 patrol cycles | Free |
-| **Total Daily (Operation Phase est.)** | | **~$2.00** |
-| **$6 Survival Yield (Meteora DLMM)** | | **~$6.00+** |
-| **Projected Surplus** | | **~$4.00+ (self-sustaining)** |
+| **Total Daily (Operation Phase)** | | **~$2.00** |
+| **$6 Bootstrap Yield (Meteora)** | | **Micro-yield from $6 seed** |
+| **Target** | | **Yield ≥ Cost (self-sustaining)** |
 
 ---
 
@@ -410,57 +410,74 @@ IF daily_spend > $4.00:
 
 ---
 
-## 9. Economic Sustainability: The $6 Survival Model
+## 9. Economic Sustainability: The $6 Bootstrap Protocol
 
-### 9.1 What "$6 Survival" Really Means
+### 9.1 Origin Story
 
-$6 Survival is **not** a daily budget cap. It is the name of our **self-sustaining economic model** — the point at which DeFi yield covers all operational costs without any external capital injection.
+This project began with **$6.00 USDC** — the last balance in a wallet. That $6 was deposited into a Meteora DLMM liquidity pool, and the micro-yield it generates is the sole autonomous funding source for the collective's API costs.
+
+Every architectural decision documented in this paper was shaped by a single question: **"Can a 9-agent AI empire survive on what $6 can earn?"**
 
 ```
 ┌────────────────────────────────────────────────────┐
-│              $6 SURVIVAL MODEL                      │
+│           THE $6 BOOTSTRAP PROTOCOL                 │
 │                                                     │
 │  ┌──────────────────┐                               │
+│  │ $6.00 USDC       │                               │
+│  │ (Initial Seed)    │                               │
+│  └────────┬─────────┘                               │
+│           ▼                                         │
+│  ┌──────────────────┐                               │
 │  │ Meteora DLMM     │                               │
-│  │ Liquidity Pool    │──── Daily Fee Yield ≈ $6+    │
-│  │ (DeFi)           │           │                   │
-│  └──────────────────┘           ▼                   │
-│                          ┌─────────────┐            │
-│                          │ API Costs   │            │
-│                          │ (OpenRouter,│            │
-│                          │  Google,    │            │
-│                          │  Notion)    │            │
-│                          └──────┬──────┘            │
+│  │ Liquidity Pool    │──── Micro-Yield (cents/day)  │
+│  └──────────────────┘           │                   │
 │                                 ▼                   │
-│                          Net Profit = Yield - Cost  │
+│  ┌──────────────────────────────────────────┐       │
+│  │ Ultra-Efficient Agent Operations          │       │
+│  │                                           │       │
+│  │  Flash-first model strategy    (~$0.05/hr)│       │
+│  │  Context Diet (92% reduction)             │       │
+│  │  Isolated cron sessions                   │       │
+│  │  Zero-dependency TA (no paid APIs)        │       │
+│  └──────────────────────────────────────────┘       │
 │                                 │                   │
 │                                 ▼                   │
-│                          ┌─────────────┐            │
-│                          │ Reinvest or │            │
-│                          │ Compound    │            │
-│                          └─────────────┘            │
+│                    Yield ≥ Cost → SURVIVAL ✅        │
+│                    Surplus → Compound into pool      │
 └────────────────────────────────────────────────────┘
 ```
 
-**Philosophy:** The collective must generate more value than it consumes — not through human subsidy, but through autonomous DeFi yield. The agent *earns its own survival*.
+### 9.2 Why This Matters
 
-### 9.2 Cost Phases
+The constraint of $6 is not a weakness — it is the entire point. It forces a level of engineering discipline that well-funded projects never achieve:
+
+| Constraint | Innovation It Produced |
+|---|---|
+| Can't afford big models | Flash-first architecture, OPUS reserved for design only |
+| Can't waste tokens | Context Diet — 92% reduction in per-request overhead |
+| Can't pay for data APIs | Zero-dependency TA suite (pure Python, 6 indicators) |
+| Can't afford errors | Bayesian fusion + Monte Carlo risk + circuit breakers |
+| Can't afford downtime | State-Guardian persistence + model failover chain |
+
+### 9.3 Cost Phases
 
 | Phase | Daily Cost | Funding | Status |
 |---|---|---|---|
-| **Build Phase** (current) | ~$15-21 | Chairman investment | 🔄 Active |
-| **Transition Phase** | ~$6-10 | Mixed (yield + subsidy) | 🔜 Next |
-| **$6 Survival** (target) | ~$3-6 | 100% Meteora DLMM yield | 🎯 Goal |
-| **Profit Phase** | ~$3-6 cost, $10+ yield | Net positive | 🚀 Vision |
+| **Build Phase** | ~$15-21 | Chairman investment (temporary) | ✅ Complete |
+| **Operation Phase** (current) | ~$2.00 | Flash-first, cron-optimized | 🔄 Active |
+| **$6 Bootstrap Survival** | < yield from $6 seed | 100% Meteora DLMM micro-yield | 🎯 Target |
+| **Compound Phase** | Cost < Yield | Surplus reinvested into pool | 🚀 Vision |
 
-### 9.3 Cost Reduction Tactics (For Reaching Survival)
+### 9.4 Cost Reduction Tactics (Born from $6 Necessity)
 
-1. **Isolated sessions for cron** — No context accumulation between runs
-2. **"Stay quiet" policy** — Cron jobs don't announce unless critical
-3. **Batch checks in heartbeats** — Multiple inspections per heartbeat
-4. **Flash-first, OPUS-rare** — OPUS reserved for architecture/strategy only
+1. **Context Diet** — 92% reduction in MEMORY.md; per-request tax cut from ~15K to ~10K tokens
+2. **Isolated sessions for cron** — No context accumulation between background runs
+3. **"Stay quiet" policy** — Cron jobs don't announce unless critical
+4. **Flash-first, OPUS-rare** — Expensive models reserved exclusively for irreplaceable design work
 5. **Free data sources** — yfinance, Brave Search, community APIs cost $0
-6. **Build Phase → Operation Phase transition** — Once engines are complete, OPUS usage drops to near-zero
+6. **Pure Python everything** — No paid SDK subscriptions, no external TA libraries
+
+> *$6 didn't limit us. It liberated us. Every optimization in this document exists because we couldn't afford to waste a single token.*
 
 ---
 

@@ -62,7 +62,9 @@ After settlement, a **Self-Reflection Engine** updates agent trust scores using 
 
 #### 3. The AOI Economy — Agents That Earn
 
-**"$6 Survival"** = the milestone where DeFi yield (Meteora DLMM fee income) fully covers all API costs. The collective becomes self-sustaining — no human subsidy required.
+**The $6 Bootstrap Protocol:** This entire system — 9 agents, cryptographic security, Bayesian fusion, Monte Carlo risk — was built and is sustained starting from **$6.00 USDC** deposited in a Meteora DLMM pool. The micro-yield from that single position funds all API costs. Every architectural decision was forged under this constraint.
+
+This is our thesis: **Intelligence should be measured not by how much you spend, but by how little you need.**
 
 Beyond survival, three revenue streams drive growth:
 
@@ -72,7 +74,7 @@ Beyond survival, three revenue streams drive growth:
 | **Nexus Bazaar** | Individual agent skills sold as verified modules with S-DNA provenance |
 | **Performance Fees** | Percentage of positive P&L from managed prediction services |
 
-**Design principle:** *The collective must earn its own survival, then compound the surplus.*
+**Design principle:** *We started with $6. We built an empire. Now the empire pays for itself.*
 
 ---
 

@@ -20,6 +20,11 @@
 - OPUS: 설계/백서 전용, 코드/반복 작업 금지
 - ⚠️ Claude Haiku TPM=50K → 컨텍스트 150K 초과 시 1회도 불가
 
+## 💰 $6 Bootstrap Protocol
+- **진짜 의미:** 지갑에 남은 마지막 $6 USDC로 시작한 극한의 가성비 생존 프로젝트.
+- **메커니즘:** $6 → Meteora DLMM 풀 예치 → 마이크로 수익으로 API 비용 충당.
+- **철학:** "Intelligence is measured not by how much you spend, but by how little you need."
+
 ## 💾 "현재를 저장" 프로토콜
 1. state_integrity.py 실행 → 2. 이상 보고 → 3. 자동 백업 → 4. 갱신 → 5. Durable Memory 저장
 
