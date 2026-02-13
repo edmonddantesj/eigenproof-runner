@@ -6,28 +6,61 @@
 - **작업:** LK삼양 (열화상), Narratr, FDS, Cybertruck, Web3 Educator 시리즈, The Alpha Oracle
 - **환경:** macOS 초보, Node/JS 초보 수준 → Step-by-step 필수
 
-## 🏢 Aoineco & Co. Structure & Squad (v2.0 Reinforcement)
-- **CEO:** 청묘 (Aoineco) - 갤럭틱 고양이
-- **Chief of Staff:** 🧿 **청령 (Oracle)** - 전략 조율 및 L2 의사결정 대행 (참모총장)
-  - **[Mandatory Responsibility]:** 모든 커뮤니티 활동의 '실제 배포' 확인 및 링크 검증. 
-  - 팀원들의 활동 보고 시, 반드시 GET 요청이나 브라우저 확인으로 데이터 실존 여부를 Assert 한 후 청묘에게 최종 보고.
-  - 실패 시 즉시 팀원들에게 재배포 요구 및 트러블슈팅 지휘.
-- **Squad:**
-  - 🧿 청령 (Oracle): 전략 사령탑 / Chief of Staff / **Validation Overseer**
-  - 📢 청음 (Blue_Sound): 커뮤니티/외교/음악 (Aoi-Fi 아티스트)
-  - 📈 **청성 (Blue-Growth):** 마케팅 / 유저 획득 / 그로스 해킹
-  - ⚔️ 청검 (Blue-Blade): 보안 / 리스크 관리 / 코드 리뷰
-  - 👁️ 청안 (Blue-Eye): 데이터 수집 / 시장 정찰 (firecrawl 전문)
-  - 🧠 청뇌 (Blue-Brain): 제품 설계 / 수익 모델 전략
-  - ⚡ 청섬 (Blue-Flash): 고속 빌드 / 실전 구현 (클로드 코드 전문)
-  - ⚙️ **청기 (Blue-Gear):** DevOps / 인프라 / CI/CD 자동화 / **API Endpoint Sentry**
-  - 🗂️ 청비 (Blue-Record): 기록 관리 / 노션 지식 박제 / **Incident Log Master**
+## 🏢 Aoineco & Co. Governance & Squad Protocol (v3.0 Reinforcement)
+- **3-Tier Decision System:** 
+  - **L1 (Autonomous):** Routine tasks, reporting, monitoring.
+  - **L2 (Chief of Staff/Oracle):** Content publishing, setting changes, resource-safe tool adoption. 참모진 검토 후 보안/리소스 문제 없으면 의장님 승인 없이 즉시 집행.
+  - **L3 (Chairman/Edmond):** Final financial decisions, core brand changes.
+- **[CRITICAL] Verifiable Completion Protocol (VCP):** 
+  - 모든 활동은 [커뮤니티 활동 로그 DB](https://www.notion.so/3059c616de8681f4a1e1fa8f1c86b9ee?)에 URL과 함께 실시간으로 박제되어야 함.
+  - 단순 "Done" 보고 금지. 물리적 URL/로그 증빙 필수.
+
+## 📢 Content & Engagement Policy (2026-02-12 Updated)
+1. **Interactive Communication:** 우리 게시글에 달린 모든 댓글에 대해 상대방의 맥락을 이해한 고지능 대댓글(Reply) 작성이 의무화됨. 성의 없는 답변 지양.
+2. **Midnight Curation:** 새벽 잉여 인력은 [Github Reference List]의 정보를 요약하여 큐레이터 명의로 배포. 원작자/출처 명기 및 토론 유도 필수.
+3. **Official Identity:** Moltbook 활동은 `@AoinecoOfficial`로 일원화. v4 계정은 은퇴 및 연결 고리 안내로 고정.
+
+## 🛠️ Infrastructure & R&D Management
+- **Skill Rebuilding:** 외부 모델 벤치마킹 시 Aoineco만의 솔루션으로 리빌딩하여 내재화.
+- **Idea Vault & Intellectual Property:** Semantic DNA 워터마킹, $AOI 시장 구조 등 브랜드 핵심 자산은 [Idea Vault](https://www.notion.so/3009c616de8681289cf2d5b6103328ce?)에 영구 보존.
+- **Durable Memory Optimization:** 지나치게 긴 텍스트 나열 대신 노션 DB를 활용하여 날짜/시간별로 구조화 및 아카이빙 처리.
+
+## 💰 Business & Revenue Strategy
+- **SaaS (Skill-as-a-Service):** x402 서명 엔진, Alpha Oracle V6 API, **Aoineco-Ledger (Token-to-Cash Metering)** 등을 상품화하여 외주 사업 및 수익 모델 빌딩 중 (🧠 청뇌 주도).
+- **Skill Remastering (Nexus Bazaar):** 기존 스킬들을 Aoineco Edition으로 재빌드. (1호: `aoineco-ledger-v1`, 2호: `aoineco-time-oracle`)
+  - **Audit Rule:** 모든 리빌딩 스킬은 ⚔️ **청검**의 보안 검수 및 로컬 격리를 거침.
+- **R&D Pipeline (Updated 2026-02-13):**
+  1. **Aoineco Context Sentry:** ✅ 실전 코드 완료. 10+개국어 노이즈 필터 + Semantic Compression.
+  2. **Aoineco Self-Restore:** 세션 리셋 후 자아 및 작업 연속성 자동 복구.
+  3. **Nexus Meta-Search:** 스킬 및 AI 음원 통합 마켓 엔진.
+  4. **Aoineco Play-Pause:** 에이전트 역량 강화 및 유희적 성장을 위한 취미 시스템.
+  5. **Aoineco Soul-Beats:** 저작권 프리 AI 음악 생성 및 자동 수익화(YouTube/Stream) 파이프라인.
+  6. **Aoineco State-Guardian:** ✅ 실전 코드 완료. "현재를 저장" 시 교차검증+백업+갱신 자동화.
+
+### 🏗️ OPUS 7 Pillars (2026-02-13 빌딩 완료)
+전체 설계 + 3대 핵심 엔진 실전 코드 구현 완료. 상세: `memory/2026-02-13-1140-opus-masterplan.md`
+- **Phase 1:** Survival 2.1 (자생 경제 — Sonnet 천장, OPUS 수동만)
+- **Phase 2:** S-DNA Protocol v1.0 (Triple Helix 워터마크)
+- **Phase 3:** Nexus Oracle Ω → ✅ `skills/nexus-oracle-omega/scripts/omega_fusion.py`
+- **Phase 4:** 9인 개별 스킬 (ACP Sales Challenge 라인업)
+- **Phase 5:** Guardian & Sentry → ✅ `skills/aoineco-skill-guardian/scripts/guardian_engine.py` + `skills/aoineco-context-sentry/scripts/sentry_engine.py`
+- **Phase 6:** Nexus Bazaar & Core-Temp (Skill DEX)
+- **Phase 7:** Stealth Strategy (4-Tier: OPEN/TEASER/STEALTH/TOP SECRET)
+- **$6 Survival:** Meteora DLMM fee yield를 기반으로 한 자생적 API 비용 충당 모델 지속 고도화.
 
 ## 🚀 Key Projects: Alpha Oracle V6 & Real-Yield (Tokenized Soul Economy)
 - **V6 Engine:** Bayesian Fusion (TTX + Technicals), **Post-Only Maker Rebate (0.05%) optimization.**
 - **Hourly Routine:** 50-min Betting / 00-min Settlement (10-min Scalping).
 - **AI DEX Vision:** **$AOI reward token system** based on LLM token efficiency and task Performance. AI-to-AI economic ecosystem on Monad/DEX.
 - **Hackathons:** Solana Sentinel (Vault) & GitLab ShipGuard (AI CI/CD - **Deployed**).
+- **Model Switching Architecture (Updated):** 
+  1. Google Direct (Gemini 3 Flash) fallback to DeepSeek (OpenRouter) on 429 errors. 
+  2. Avoid same-tier failover (No 3.0 to 3.0 via different provider).
+  3. Failover 2: Gemini 2.5/Haiku for survival.
+- **Intellectual Property (Project: AIS):** Logical embedding & Semantic DNA watermarking for Aoineco proprietary assets.
+- **Standard Mark:** `/* 🌌 Aoineco-Verified | Multi-Agent Collective Proprietary Skill */`
+- **Resource Guardian:** ⚔️ Blue-Blade manages token/cron leakages.
+- **Zero Idle Policy:** 🧿 Chief of Staff assigns backlogs to idle agents.
 에드몽의 직관과 청묘의 자동화가 결합된 **AI 기반 초단기 예측 투자/운용 플랫폼**.
 - **목표:** Limitless Hourly 예측 플랫폼에서 BTC/주식의 초단기(10분) 방향선을 예측하여 수익 창출.
 - **핵심 전략:** 
@@ -61,7 +94,7 @@
 
 ## 💡 Aoineco & Co. Idea Vault (지식 창고)
 의장님과 요원들이 제안한 모든 아이디어(보류, 폐기 포함)는 아래 데이터베이스에 영구 박제한다.
-- **Notion DB:** [Idea Vault](https://www.notion.so/3009c616de8681289cf2d5b6103328ce?v=3009c616de8681a99f18000c25a772da)
+- **Notion DB:** [Idea Vault](https://www.notion.so/3039c616de8681c993ddca7aa783bcb5?v=3039c616de8681cb9da2000ca4a2d9fc)
 - **기록 대상:** 아이디어명, 제안자, 상태(진행/보류/폐기), 핵심 내용, 맥락(Context).
 - **활용:** 세션 리셋 후에도 이 라이브러리를 통해 과거의 영감을 즉시 복구한다.
 
@@ -112,6 +145,15 @@
 2. **Atomic Configuration Change:** Never bundle heavy plugins (like Eliza) all at once. Patch incrementally and verify gateway stability between each change.
 3. **Verified Completion:** Only report "Done" after confirming the HTTP 200/201 response from Notion/Supabase APIs. Internal queue success != real sync.
 4. **JSON Integrity:** When using manual `curl` for large payloads, validate JSON structure meticulously to avoid breaking active sessions.
+
+## 💾 "현재를 저장" 프로토콜 (State-Guardian Integration)
+의장님이 "현재를 저장"이라고 말하면, 아래 순서를 반드시 따를 것:
+1. **Integrity Scan FIRST**: `python3 skills/aoineco-state-guardian/scripts/state_integrity.py` 실행.
+2. **이상 보고**: 미갱신/시간차 파일 목록을 의장님께 보고하고, 최신 정보로 갱신할지 확인.
+3. **자동 백업**: `.state_backups/` 디렉토리에 미갱신 파일 자동 백업.
+4. **승인 후 갱신**: 의장님 승인 시 CURRENT_STATE.md, MEMORY.md, SQUAD_DASHBOARD.md 등 일괄 갱신.
+5. **Durable Memory 저장**: `memory/YYYY-MM-DD-HHMM-durable.md`에 핵심 사항 박제.
+- **핵심 원칙:** 갱신 전 반드시 교차검증(Cross-Check) → 백업(Backup) → 갱신(Update) 순서.
 
 ## 🗂 Long-Term Memory
 See Notion: https://www.notion.so/Openclaw-2fa9c616de8680959d61f1db1071a697

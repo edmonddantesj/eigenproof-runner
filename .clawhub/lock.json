@@ -32,6 +32,18 @@
     "ogment-agentic-cli": {
       "version": "1.0.0",
       "installedAt": 1770822805632
+    },
+    "cfo": {
+      "version": "1.0.0",
+      "installedAt": 1770937989042
+    },
+    "agent-team-orchestration": {
+      "version": "1.0.0",
+      "installedAt": 1770937990676
+    },
+    "phoenixclaw-ledger": {
+      "version": "0.0.2",
+      "installedAt": 1770938413619
     }
   }
 }

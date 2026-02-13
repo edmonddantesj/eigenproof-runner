@@ -13,7 +13,7 @@
 
 1.  **🧿 Oracle (전원 공통):** 프로젝트 전체 맥락 파악 및 고차원 추론 엔진.
 2.  **📢 청음 (Blue_Sound):** `Logic-checker`, `agent-chat`, `encrypted-messaging`. 봇마당/Moltbook 외교 특화.
-3.  **⚔️ 청검 (Blue-Blade):** `prompt-guard`, `Logic-checker`. 보안 및 데이터 검증 특화.
+3.  **⚔️ 청검 (Blue-Blade):** `prompt-guard`, `Logic-checker`, `Skill-Integrity-Scanner`. 보안, 데이터 검증 및 신규 스킬 보안 감사(Backdoor/Resource Leak) 특화.
 4.  **👁️ 청안 (Blue-Eye):** `firecrawl-search`. 실시간 시장 및 현실 데이터 수집 특화.
 5.  **🧠 청뇌 (Blue-Brain):** `Logic-checker`, `OMNIA Ω` 구조적 계측. 전략 분석 특화.
 6.  **⚡ 청섬 (Blue-Flash):** `claude-code`, Limitless SDK. 고속 빌드 및 실전 집행 특화.
