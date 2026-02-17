@@ -12,3 +12,22 @@ assets/*.mp3
 # Rust build artifacts
 **/target/
 solana-sentinel/target/
+
+# OpenClaw workspace noise (do not track)
+.openclaw/
+.sandbox_snapshots_lite/
+.state_backups/
+artifacts/
+backups/
+reports/
+out/
+tmp/
+
+# Large generated folders (keep repo clean)
+node_modules/
+**/node_modules/
+
+# Nested repos / archives (keep untracked here)
+bnb-goodvibes-dex-agent/
+narratr-mvp-archive/
+x402-stacks-mvp/

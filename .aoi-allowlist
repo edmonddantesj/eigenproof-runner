@@ -1,0 +1,8 @@
+# AOI GUARD allowlist (workspace root)
+# Purpose: allow commits that clean repo hygiene and maintain the solana-sentinel subtree.
+
+.aoi-allowlist
+.gitignore
+solana-sentinel/
+# Allow removal of legacy/broken submodule entry
+narratr-mvp-archive
