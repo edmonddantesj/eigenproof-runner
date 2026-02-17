@@ -6,3 +6,5 @@
 solana-sentinel/
 # Allow removal of legacy/broken submodule entry
 narratr-mvp-archive
+# Allow removal of legacy/broken submodule entry
+the-alpha-oracle
