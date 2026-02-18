@@ -1,0 +1,9 @@
+{
+  "schema": "eigenproof.input.v0.1",
+  "job_id": "demo001",
+  "task": {
+    "kind": "hash_demo",
+    "message": "hello eigencompute",
+    "n": 7
+  }
+}

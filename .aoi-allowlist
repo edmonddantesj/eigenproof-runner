@@ -1,0 +1,9 @@
+# Allowlist for EigenProof Runner publish repo
+# Keep minimal but include all files needed for hackathon submission.
+.aoi-allowlist
+Dockerfile
+runner.py
+sample_input.json
+run_local.sh
+README.md
+.gitignore
