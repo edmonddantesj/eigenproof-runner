@@ -91,3 +91,7 @@ Expected: `OK` for each file listed.
 - [ ] `manifest.self_sha256` exists.
 - [ ] Default run: `python3 runner.py --input sample_input.json --outdir out` runs and captures output metadata.
 - [ ] Deterministic mode: `python3 runner.py --input sample_input.json --outdir out --deterministic` replays consistent result-hash + fixed metadata fields.
+
+## Submission pitch (2 lines)
+This project is a proof-first EigenCompute runner that emits reproducible, verifiable execution artifacts (`manifest.json` + `sha256sum.txt`) from every run.
+It is safe, inspectable, and judge-friendly: fixed policy/version context, commit-aware provenance, and a deterministic replay mode for auditability.
