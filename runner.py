@@ -35,6 +35,9 @@ def utc_now_iso() -> str:
 
 
 def git_commit_or_none() -> str | None:
+    env = os.environ.get("GIT_COMMIT")
+    if env:
+        return env
     try:
         r = subprocess.run(["git", "rev-parse", "--short", "HEAD"], capture_output=True, text=True, timeout=2)
         if r.returncode == 0:
