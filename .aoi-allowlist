@@ -1,9 +1,18 @@
 # Allowlist for EigenProof Runner publish repo
-# Keep minimal but include all files needed for hackathon submission.
+# Keep minimal but include all files needed for secure CI + local hooks.
+
 .aoi-allowlist
+.gitignore
+
+# core
 Dockerfile
 runner.py
 sample_input.json
 run_local.sh
 README.md
-.gitignore
+
+# AOI security gate (CI + local)
+.github/
+scripts/
+aoi-core/
+aoi_core/
