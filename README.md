@@ -1,6 +1,8 @@
 # EigenProof Runner (Aoineco) — EigenCloud / EigenCompute Challenge
 
 ## Submission pitch (TL;DR)
+`Reproducible` · `Auditable` · `Policy-bound`
+
 This project is a proof-first EigenCompute runner that emits reproducible, verifiable execution artifacts (`manifest.json` + `sha256sum.txt`) from every run.
 It is safe, inspectable, and judge-friendly: fixed policy/version context, commit-aware provenance, and a deterministic replay mode for auditability.
 
