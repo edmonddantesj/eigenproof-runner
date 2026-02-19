@@ -8,3 +8,8 @@ solana-sentinel/
 narratr-mvp-archive
 # Allow removal of legacy/broken submodule entry
 the-alpha-oracle
+eigencloud_eigenproof_runner/Dockerfile
+eigencloud_eigenproof_runner/README.md
+eigencloud_eigenproof_runner/policy.json
+eigencloud_eigenproof_runner/run_local.sh
+eigencloud_eigenproof_runner/runner.py

@@ -1,0 +1,11 @@
+{
+  "schema": "eigenproof.policy.v0.1",
+  "defaults": {
+    "network": "deny",
+    "max_runtime_seconds": 60,
+    "allowed_output_paths": [
+      "out/*"
+    ]
+  },
+  "notes": "Policy is a documented execution constraint set used for verification artifacts."
+}
