@@ -16,3 +16,7 @@ README.md
 scripts/
 aoi-core/
 aoi_core/
+
+# reproducibility
+pyproject.toml
+uv.lock
