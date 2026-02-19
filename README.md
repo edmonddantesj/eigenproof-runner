@@ -50,5 +50,5 @@ Expected: `OK` for each file listed.
 
 ## Manifest extras
 
-- `git_commit` (from `git rev-parse --short HEAD` when available)
+- `runtime.git_commit` (baked into the container via build arg, for reproducibility)
 - optional `docker_image_digest` (if the platform injects `EIGEN_IMAGE_DIGEST` or `DOCKER_IMAGE_DIGEST`)
