@@ -36,8 +36,46 @@ class GateFinding:
 DEFAULT_SECRET_PATTERNS: list[tuple[str, re.Pattern[str]]] = [
     ("AWS_ACCESS_KEY_ID", re.compile(r"AKIA[0-9A-Z]{16}")),
     ("OPENAI_API_KEY", re.compile(r"sk-[A-Za-z0-9]{20,}")),
-    ("PRIVATE_KEY_HEX", re.compile(r"0x[a-fA-F0-9]{64}")),
 ]
+
+HEX_0X_64 = re.compile(r"0x[a-fA-F0-9]{64}")
+
+# Heuristic allowlist: tx hashes are also 0x + 64 hex.
+# We allow them in documentation contexts, but keep fail-closed elsewhere.
+TXHASH_HINTS = {
+    "txhash",
+    "tx hash",
+    "transaction hash",
+    "txid",
+    "explorer",
+    "etherscan",
+    "bscscan",
+    "basescan",
+    "arbiscan",
+    "polygonscan",
+    "solscan",
+}
+
+SENSITIVE_KEYWORDS = {
+    "private key",
+    "privkey",
+    "seed",
+    "mnemonic",
+    "secret",
+    "wallet",
+}
+
+
+def looks_like_doc_txhash(*, line: str, path: Path) -> bool:
+    if path.suffix.lower() not in {".md", ".txt"}:
+        return False
+    l = line.lower()
+    return any(h in l for h in TXHASH_HINTS)
+
+
+def looks_like_secret_context(*, line: str) -> bool:
+    l = line.lower()
+    return any(k in l for k in SENSITIVE_KEYWORDS)
 
 
 def scan_repo_snapshot(repo_dir: Path) -> list[GateFinding]:
@@ -104,6 +142,7 @@ def scan_repo_snapshot(repo_dir: Path) -> list[GateFinding]:
         except Exception:
             continue
 
+        # 1) deterministic secret patterns
         for label, pat in DEFAULT_SECRET_PATTERNS:
             if pat.search(content):
                 findings.append(
@@ -114,6 +153,43 @@ def scan_repo_snapshot(repo_dir: Path) -> list[GateFinding]:
                         evidence={"file": str(p.relative_to(repo_dir)), "pattern": label},
                     )
                 )
+
+        # 2) 0x64-hex patterns: treat as private key unless clearly a tx hash in docs.
+        if HEX_0X_64.search(content):
+            rel = str(p.relative_to(repo_dir))
+            # scan line-by-line so we can apply context hints
+            for i, line in enumerate(content.splitlines(), start=1):
+                if not HEX_0X_64.search(line):
+                    continue
+
+                # Allow tx hashes in docs when explicitly labeled as such
+                if looks_like_doc_txhash(line=line, path=p) and not looks_like_secret_context(line=line):
+                    continue
+
+                # If it's a doc but not clearly a tx hash, downgrade to MED (still visible)
+                if p.suffix.lower() in {".md", ".txt"} and not looks_like_secret_context(line=line):
+                    severity = "med"
+                    rule_id = "secrets.hex64.maybe_txhash"
+                    pattern = "HEX_0X_64"
+                    msg = f"0x64-hex detected in doc; could be txhash or key. Verify context. file={rel}:{i}"
+                else:
+                    severity = "high"
+                    rule_id = "secrets.pattern.match"
+                    pattern = "PRIVATE_KEY_HEX"
+                    msg = f"Potential secret detected (PRIVATE_KEY_HEX) in file {rel}:{i}."
+
+                findings.append(
+                    GateFinding(
+                        rule_id=rule_id,
+                        severity=severity,
+                        message=msg,
+                        evidence={"file": rel, "line": i, "pattern": pattern},
+                    )
+                )
+
+                # don't spam too many lines per file
+                if sum(1 for f in findings if (f.evidence or {}).get("file") == rel) >= 5:
+                    break
 
     return findings
 
