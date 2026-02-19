@@ -36,7 +36,7 @@ def utc_now_iso() -> str:
 
 def git_commit_or_none() -> str | None:
     try:
-        r = subprocess.run(["git", "rev-parse", "HEAD"], capture_output=True, text=True, timeout=2)
+        r = subprocess.run(["git", "rev-parse", "--short", "HEAD"], capture_output=True, text=True, timeout=2)
         if r.returncode == 0:
             return r.stdout.strip() or None
     except Exception:
@@ -88,6 +88,8 @@ def main() -> int:
         "runtime": {
             "python": platform.python_version(),
             "platform": platform.platform(),
+        "git_commit": git_commit_or_none(),
+        "docker_image_digest": os.environ.get("EIGEN_IMAGE_DIGEST") or os.environ.get("DOCKER_IMAGE_DIGEST"),
         },
         "source": {
             "git_commit": git_commit_or_none(),

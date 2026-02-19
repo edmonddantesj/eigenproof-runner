@@ -35,3 +35,20 @@ cat out/sha256sum.txt
 - Deterministic output for demo.
 - No tokenized agents.
 - No external calls.
+
+
+## Verify the bundle
+
+After a run, verify integrity with:
+
+```bash
+cd out
+sha256sum -c sha256sum.txt
+```
+
+Expected: `OK` for each file listed.
+
+## Manifest extras
+
+- `git_commit` (from `git rev-parse --short HEAD` when available)
+- optional `docker_image_digest` (if the platform injects `EIGEN_IMAGE_DIGEST` or `DOCKER_IMAGE_DIGEST`)
