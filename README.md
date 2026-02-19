@@ -10,6 +10,13 @@ Each run produces a verifiable bundle:
 - `manifest.json` (sha256 for files + runtime metadata)
 - `sha256sum.txt`
 
+## Why Eigen?
+This runner is designed for off-chain execution environments such as **EigenCompute**, where reproducibility, commit pinning, and verifiable artifacts are first-class requirements. It aims to reduce ambiguity between execution, policy constraints, and audit artifacts.
+
+## Architecture (text flow)
+
+`Input JSON` → `runner.py` → `output.json` + `identity.json` + `policy.json` → `manifest.json` → `sha256sum.txt`
+
 ## Quickstart (local Docker)
 
 ```bash
