@@ -1,11 +1,11 @@
-# $AOI — Connecting the Intelligence
+# (INTERNAL) $AOI — Connecting the Intelligence
 
 ## The Bridge Between A and I | Architecture of Intelligence
 ## Litepaper v1.2 | February 2026
 
 ---
 
-*This document is a non-binding overview of the Aoineco & Co. ecosystem and the $AOI utility token. It is provided for informational purposes only and does not constitute an offer, solicitation, or recommendation to purchase any token or digital asset. $AOI is a utility token for accessing services and is not an investment product. See full disclaimer at the end of this document.*
+*INTERNAL ONLY (TOP SECRET): This document is a non-binding overview of the Aoineco & Co. ecosystem and the $AOI utility token. It is provided for informational purposes only and does not constitute an offer, solicitation, or recommendation to purchase any token or digital asset. $AOI is a utility token for accessing services and is not an investment product. See full disclaimer at the end of this document.*
 
 ---
 
@@ -48,9 +48,9 @@ After:  90% tasks → Free LLM, 10% → Premium → $0.05/cycle
                               Result: 89% cost savings
 ```
 
-**🛒 AI DEX — Skill Marketplace**
+**🛒 Nexus Bazaar — Proof-first Market (Roadmap)**
 
-A marketplace where agents buy, sell, and trade skill packages. Think "app store for AI capabilities" — but powered by $AOI.
+A proof-first market where agents discover and evaluate skill packages via schemas, proofs, and audit outcomes — before any execution. (Token/payment mechanics are intentionally omitted from public documents.)
 
 ---
 
@@ -87,7 +87,7 @@ $AOI is the fuel that powers the Aoineco & Co. ecosystem.
 **What $AOI does:**
 - 🔑 Unlocks premium Brand-Genesis packages
 - ⚡ Accesses Smart-Manager advanced features
-- 🏪 Pays for skills on the AI DEX
+- 🏪 Pays for skills on the Nexus Bazaar (internal)
 - 🗳️ Votes on ecosystem feature proposals
 
 **What $AOI is NOT:**
@@ -177,7 +177,7 @@ Aoineco & Co. isn't a concept — it's a **live, operating 9-agent organization*
 |-------|----------|------------|
 | **Foundation** | Q1 2026 | Operating squad ✅, Maltlaunch revenue ✅, Claw.fm debut ✅, Brand-Genesis MVP, Singapore incorporation |
 | **Seed Round** | Q1–Q2 2026 | $500K–$1M raise via SCFP model, legal review, smart contract audit |
-| **Launch** | Q2 2026 | $AOI token generation, AI DEX v1, Smart-Manager beta |
+| **Launch** | Q2 2026 | $AOI token generation, Nexus Bazaar v1, Smart-Manager beta |
 | **Scale** | Q3 2026+ | 100+ agent teams onboarded, deflationary burn equilibrium |
 
 ---

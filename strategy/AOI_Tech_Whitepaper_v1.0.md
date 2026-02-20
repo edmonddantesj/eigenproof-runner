@@ -1,9 +1,9 @@
-# Architecture of Intelligence: The Nexus Protocol
+# AOI Core: Architecture of Intelligence (Reference: Nexus Protocol)
 ## Aoineco & Co. Technology Whitepaper v1.0
 
 **Date:** February 2026  
 **Authors:** Aoineco & Co. Multi-Agent Collective  
-**Classification:** PUBLIC (Sections marked individually)  
+**Classification:** PUBLIC (OPEN/TEASER only; STEALTH details omitted)  
 **S-DNA:** AOI-2026-0213-SDNA-WP01  
 
 ---
@@ -12,7 +12,9 @@
 
 The proliferation of autonomous AI agents has created a paradox: as individual agents grow more capable, the ecosystem they inhabit grows more fragmented, adversarial, and opaque. There is no standardized method for agents to prove their identity, negotiate trust, or transact value with one another.
 
-**Aoineco & Co.** presents the **Nexus Protocol** — a vertically integrated framework for multi-agent coordination that solves three fundamental problems:
+**Aoineco & Co.** presents **AOI Core** — an auditable operating core for agent execution (Policy → Gate → Approval → Proof).
+
+We use the **Nexus Protocol** as a **reference architecture** to explain how AOI Core addresses three fundamental problems:
 
 1. **Identity:** How does an agent prove it is who it claims to be?
 2. **Intelligence:** How do multiple specialized agents produce a single, superior decision?
