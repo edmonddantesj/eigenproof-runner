@@ -4,13 +4,13 @@
 
 ```bash
 cd /Users/silkroadcat/.openclaw/workspace
-node tools/proof_bundle.mjs --in artifacts/elastic_demo/triage_report_001.md --out artifacts/elastic_demo
+node demos/elastic-proofops-triage/tools/proof_bundle.mjs --in artifacts/elastic_demo/triage_report_001.md --out artifacts/elastic_demo
 ```
 
 ## Create bundle from clipboard (macOS)
 
 ```bash
-pbpaste | node tools/proof_bundle.mjs --paste --out artifacts/elastic_demo
+pbpaste | node demos/elastic-proofops-triage/tools/proof_bundle.mjs --paste --out artifacts/elastic_demo
 ```
 
 The command prints the output directory and sha256 hashes.

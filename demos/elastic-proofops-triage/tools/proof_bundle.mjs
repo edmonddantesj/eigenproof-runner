@@ -8,9 +8,9 @@
  * - sha256.txt (integrity hashes)
  *
  * Usage:
- *   node tools/proof_bundle.mjs --in /path/to/triage_report.md --out artifacts/elastic_demo
+ *   node demos/elastic-proofops-triage/tools/proof_bundle.mjs --in /path/to/triage_report.md --out artifacts/elastic_demo
  *   # or from clipboard-like paste:
- *   node tools/proof_bundle.mjs --paste --out artifacts/elastic_demo
+ *   node demos/elastic-proofops-triage/tools/proof_bundle.mjs --paste --out artifacts/elastic_demo
  */
 
 import fs from 'node:fs';
@@ -71,7 +71,7 @@ async function main() {
   } else {
     // --paste: read stdin
     if (process.stdin.isTTY) {
-      throw new Error('--paste requires piping text in. Example: pbpaste | node tools/proof_bundle.mjs --paste');
+      throw new Error('--paste requires piping text in. Example: pbpaste | node demos/elastic-proofops-triage/tools/proof_bundle.mjs --paste');
     }
     reportText = await readAllStdin();
   }
