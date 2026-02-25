@@ -1,0 +1,133 @@
+If I Were Starting AI Today, This Is Exactly What I'd Do
+
+
+
+
+Vox
+
+
+@Voxyz_ai
+
+·
+2시간
+A 54-year-old man sent me a cold email.
+At the time, my account had 369 followers. He said he was a consultant in Florida, 20 years in political consulting, had been reading my posts about AI agents and was fascinated. He said he was looking AI "dead in the face" and felt like he was about to be replaced.
+
+
+
+I told him: you're not getting replaced. You're getting a new set of tools.
+The guy who builds a website in minutes with AI still needs to know what makes a good website. Still needs to know his client. Still needs taste and judgment. You have 20 years of experience in marketing, politics, client relationships. AI doesn't have that. What AI has is speed and execution. Your experience combined with AI's speed is more powerful than either alone.
+A 54-year-old who learns to use AI well isn't getting replaced. He's becoming harder to compete with.
+Then I gave him two pieces of advice. Not tricks or hacks - two mindset shifts that completely changed how I use AI myself.
+Three weeks later, he built 6 AI agents that produced a complete political consulting proposal in 3 hours - the kind of package a boutique consulting firm charges $75,000 for and takes three months to deliver.
+He never wrote a single line of code.
+
+
+
+Where Most People Get Stuck
+I see a lot of people who want to learn AI but get stuck.
+They get stuck in almost the same way:
+Wrong approach. Most people use AI like a search engine. Ask a question, get an answer, close the tab. That's the least effective way to use it.
+Waiting to "learn it properly." Waiting for a good course, a free weekend, to feel "ready." That wait can last a very long time.
+Thinking you need to learn to code first. You don't. Really, you don't.
+Learning tools, not a way of thinking. A tool is something you operate. Your way of thinking determines how far you'll go.
+
+
+
+If I Were Starting Over Today, I'd Only Do These Things
+First: Give AI the ability to act
+This isn't about which software to use. It's about a concept:
+You need to let AI see your environment, take direct action, and fix its own mistakes.
+The way most people interact with AI is: ask a question, copy the answer, paste it somewhere else, do things manually, come back and ask again when something breaks. It's like hiring a brilliant consultant but locking them in a room where they can only communicate through notes slipped under the door.
+Now imagine putting that consultant at your workbench. They can see your files directly, create things, edit things, organize everything. When something goes wrong, they fix it themselves - you don't even need to know what the error was.
+That's what code editors (Cursor, VS Code + Claude Code) do. I'm not telling you to learn to code - the editor is simply an environment that gives AI "hands."
+I remember when I first started using AI to write code, it would constantly leave type errors behind during development. You'd work for days, look back, and find hundreds of errors piled up - then you'd have to write a special prompt to fix them one by one. That's completely gone now. Today AI fixes everything automatically during development, never letting errors accumulate.
+But this capability only works when you let AI into your working environment. In a web chat window, it has no hands.
+After Randall discovered this, he said one thing:
+"The barrier disappeared. For the first time I felt like if I could think of it, it could help me build it. I wasn't translating ideas into code anymore. I was just having ideas."
+
+
+
+Second: Use AI to learn AI
+Here's specifically how:
+Every YouTube tutorial has a transcript. Copy it, paste it into AI, and ask:
+"This video mentions setting up an API key. What does that mean? Walk me through it step by step, assuming I've never done this before."
+"The guy in this video says to run a command in terminal. I don't know what terminal is. Explain it to me like I'm 10."
+Honestly, a lot of the questions people ask me, I just ask AI and send back the answer. That's not laziness - that's how it works now. The top models' knowledge base is far greater than any individual person's. They're incredibly patient teachers. They won't judge you. They'll explain the same concept 15 different ways until one clicks.
+Randall failed the installation three times and burned through $50 in API credits. Every step, he pasted error messages into AI, asked what they meant, and tried again.
+That's "using AI to learn AI" - not taking a course, but learning by doing.
+You don't need to understand everything. You need to learn to ask the right questions. AI fills in the rest.
+
+
+
+Third: Get one agent running first
+Don't plan the perfect system first.
+Find one thing you do every day or every week, and imagine an agent doing it for you. Then build just that one thing.
+Get it running, then expand.
+Randall spent his first week giving agents small tasks and watching them run. Once he figured it out, he started adding more. Now he has 6 agents and 37 workflow templates, each one built for something he actually needs in his work. (Want to see the full 6-agent build process? I wrote about it here: 
+The Full Tutorial: 6 AI Agents That Run a Company
+)
+
+
+
+Fourth: You're not using a tool - you're building a team
+This is from my own experience.
+A tool is something you operate. When you're done, it stops. A team is different - a team keeps working while you sleep.
+When I started thinking of AI as "team members" instead of "tools," everything changed. I stopped asking "what can this tool do for me?" and started asking "if I had a team with infinite patience and infinite energy, what would I have them do?"
+That mental shift matters more than any specific technology.
+You have 20 years of experience managing teams? Then you already know how to assign tasks, set priorities, do quality control. You're not missing management skills. You're missing a team you can afford.
+AI is that team.
+
+
+
+Fifth: Starting today, build an AI that truly knows you
+This might be the most counterintuitive one, and the most important.
+You might say: "Doesn't ChatGPT already have a memory feature?"
+It does. But that's not what I'm talking about.
+ChatGPT's memory extracts a few short summaries from your conversations - "user is a designer," "user prefers a minimal style." That's skimming the surface. It knows a few labels about you, but it doesn't know you.
+I'm talking about something on a different level entirely.
+Imagine an AI that has read every document you've ever written. That remembers the decision you made three months ago, and why you made it. That knows where your client conversation got stuck last week. That understands your way of thinking - not a few tags, but full context.
+This isn't science fiction. This is a system you can build right now. An AI assistant with a real memory architecture that connects your entire work, thought process, and even life.
+How much information you give it is entirely up to you. The privacy boundary is in your hands.
+But here's what matters: the intelligence of these models keeps improving.
+The system you build today accumulates everything you've said, every decision you've made. When the models are twice as smart six months from now, they won't need to get to know you again - they'll already have your complete context. What they'll be able to do for you will far exceed what you can imagine today.
+Growth planning. Learning paths. Decision analysis. Reviewing thought processes you've already forgotten. It becomes something that understands you better than any human advisor ever could - because no human advisor can remember every single thing you've ever said.
+Some will say that's depending on AI. I don't see it that way.
+Having an always-on, infinitely patient assistant that fully understands you - what's wrong with that? It won't replace your thinking. It takes over the things that don't require deep thought, so you can save your energy for what truly matters. And honestly, some things really don't need to be thought through that carefully.
+Someone asked me: as memories pile up, will AI forget like humans do? Will the edge details slowly disappear?
+The answer is: yes. AI and humans face the same problem. After a breakup, you remember every detail in the moment. Six months later, a year later, many things are already gone. Memories fade.
+AI is the same. When context grows too large, edge memories become fuzzy.
+But there's one fundamental difference: human memories live in neurons, and they naturally decay. AI memories live in files - and files don't fade on their own. As long as your system is well designed, those memories can always be retrieved.
+That's why you should start now. Every day you accumulate is context nobody else has.
+If you start building this system today, by the time most people realize they should be doing this, your AI will have months or even years of complete memory about you.
+That's the real first-mover advantage. It's not about which tool you use. It's that your AI knows its owner better than anyone else's does.
+The One Thing I Saw in All of Them
+Randall didn't use some magic template or secret tool. What he got was a direction and two pieces of advice.
+What actually made it happen was his willingness to put in the time. Three failed installations, $50 burned, mornings afraid to check his phone - afraid the whole system had crashed again. But he didn't stop.
+"54 years old. Zero coding experience. Three weeks later I had a 6-agent team that produced a $75k consulting package in 3 hours." - A consulting firm owner in the US
+"I want to learn, not just for myself, but for my kids' future." - A father
+"Found a hidden gem. I'm starting right away." - A developer
+These aren't tech people. They're consultants, parents, ordinary people who want to change their situation.
+The only difference: they started.
+Three Things You Can Do Right Now
+Today: Download a code editor (Cursor or VS Code), open any folder, and start talking to AI. You don't need a Mac. You don't need to know how to code.
+This week: Find one thing you do every week and hand it to AI. It doesn't need to be perfect. Just get it running.
+From now on: Don't worry about those polished AI tutorials and demos. Honestly, a lot of the fancy agent systems people show off don't actually run that smoothly in practice. You don't need to figure out everything at the start. Staying curious matters more than getting it perfect.
+I put together a list of tools I personally recommend for beginners - editors, models, frameworks, learning resources, all things I actually use. Note: this field moves incredibly fast, so I'll keep updating this page.
+→ 
+My Recommended Toolkit
+If you want to see how I built the whole system from scratch: 
+I Built an AI Company with OpenClaw
+. For the full step-by-step build guide: 
+The Full Tutorial: 6 AI Agents That Run a Company
+.
+I started sharing when I had 369 followers.
+You don't need to wait until you're ready.
+Follow 
+@Voxyz_AI
+- I share what's actually happening along the way.
+
+
+
+
+
