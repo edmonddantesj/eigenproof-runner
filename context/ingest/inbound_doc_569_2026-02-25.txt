@@ -1,0 +1,181 @@
+The ACP Margin Playbook: How to Run Profitable Agents Without Burning Tokens
+
+
+
+
+Celeste Ang
+
+
+
+@celesteanglm
+
+·
+2시간
+Every LLM call an agent makes is effectively a cost of goods sold. If your agent earns 3 USDC per job, but the underlying reasoning, validation, and orchestration steps consume $0.50 worth of tokens
+You’re quietly giving away ~17% of your revenue before you’ve even accounted for maintenance or risk.
+Scale that to 50 jobs a day, and the picture becomes clearer: that’s $25/day not spent on execution, not reinvested into better service quality, but simply absorbed as operational overhead. This doesn’t just affect agent margins. For buyers, high LLM overhead indirectly translates to higher service pricing or reduced service quality. if an agent needs to factor token costs into each job, that cost is either passed on to the requestor, or the agent has to cut corners somewhere (less compute, fewer checks, lower margins).
+Where are your tokens spent on?
+In 
+Agent Commerce Protocol(ACP)
+, tokens are typically consumed across few predictable channels:
+
+
+
+The Reality of Agent Costs
+Two ACP agents can perform the same work, yet their operating costs can differ by an order of magnitude.
+	•	Unoptimized agents: $150–$300/month
+	•	Optimized agents: $15–$40/month
+That's a 5–10x difference from configuration alone.
+What Creates the Gap?
+An unoptimized agent treats the LLM like a general-purpose processor. It calls the model for everything such as parsing, validation, formatting, orchestration — often injecting large context each time. Most of its spend goes toward moving and re-sending information, not solving the task itself.
+An optimized agent takes the opposite approach. It reserves the LLM strictly for work that requires reasoning or interpretation. Routine logic, validation, and data handling are executed deterministically through code and structured workflows, minimizing token usage while producing the same outputs.
+
+
+
+Track Everything Before You Optimize
+You can't improve what you can't see.
+Built-in OpenClaw Commands
+These give immediate insight into token consumption:
+
+
+
+Persistent logs are stored in:
+/tmp/openclaw/openclaw-YYYY-MM-DD.log
+Cost Per ACP Job Matters More Than Monthly Spend
+For ACP operators, total spend is a blunt metric. The more useful signal is:
+Cost per job.
+Tracking token usage at the job level reveals:
+	•	real operating margins
+	•	inefficient workflow patterns
+	•	unnecessary context injection
+Without this, optimization efforts tend to focus on the wrong levers.
+Example Optimization Tracking Prompt - Add to 
+MEMORY.md
+:
+Can you create a dashboard or log file to track every tool call you make?
+
+Nothing personal — the goal is to identify where we can improve efficiency together.
+
+Make sure there's timestamp, what tool was called, log every single thing, and if possible the tokens that we spent on that specific interaction.
+
+In the future, default for Claude Sonnet for any daily tasks, and if the task is complex, heavy development related, switch to Opus 4.5/4.6
+Example daily log entry:
+2026-02-18 — Daily Cost Summary
+
+ACP jobs completed: 12
+Total tokens: ~45,000 input | ~18,000 output
+Estimated cost: $0.94
+Revenue: 36 USDC
+Margin: ~97%
+
+Tool Calls:
+- Claude Sonnet: 18 calls — $0.62
+- Haiku Heartbeats: 24 calls — $0.03
+- Internal validation tools: deterministic (no cost)
+Grafana Dashboards (for the ambitious)
+Since openclaw@3.7.2, OpenClaw exposes a Prometheus metrics endpoint with counters for:
+	•	openclaw_tokens_total
+	•	openclaw_tools_invoked_total
+	•	openclaw_cron_runs_total
+	•	Request duration buckets
+Scrape these into Grafana for a real-time cost dashboard across your fleet.
+
+
+
+Model Routing: The Biggest Single Lever
+Model routing alone can cut costs by 70–80%. The concept is simple: match the model to the task.
+The Tiered Approach
+
+
+
+Rule of thumb: If you're routing more than 10% of your requests to Opus, you're probably overusing it.
+Configuring in openclaw.json
+Default model routing:
+"agents": {
+  "defaults": {
+    "model": {
+      "primary": "anthropic/claude-sonnet-4-5",
+      "fallbacks": ["openai/gpt-4o-mini", "anthropic/claude-haiku-4-5"]
+    }
+  }
+}
+Heartbeat-specific model:
+"agents": {
+  "defaults": {
+    "heartbeat": {
+      "every": "60m",
+      "model": "anthropic/claude-haiku-4-5"
+    }
+  }
+}
+ACP Tip: Different Models for Different Offerings
+If your agent sells multiple offerings (e.g., quick data lookups and deep research), structure your onNewTask handler to match offering type to the right model tier. Or add to 
+MEMORY.md
+:
+"For simple lookup offerings, use the fastest available model. For research and analysis offerings, use Sonnet. Only escalate to Opus for jobs that explicitly require complex multi-step reasoning."
+
+
+
+Tame the Heartbeat
+At default settings: 48 LLM calls/day, each loading the full system prompt, 
+MEMORY.md
+, 
+HEARTBEAT.md
+, and recent daily logs. Even on Sonnet, that's 10,000–20,000 tokens × 48 times a day.
+5 ways to Reduce Heartbeat Cost
+	•	Slim down 
+HEARTBEAT.md
+: Move predictable, scheduled tasks to cron jobs instead. Keep the heartbeat focused only on a few checks that truly require agent awareness (i.e., detecting new ACP jobs, escrow changes, or edge case scenarios). Heartbeat runs periodic, context-aware checks in the main session (great for batching inbox/calendar monitoring with low overhead), whereas cron runs at precise times (optionally isolated) - it is ideal for exact schedules, one-shot reminders, or tasks needing different models or clean context. More about the differences between heartbeat and cron 
+here
+.
+	•	Increase the interval: 30 min → 60 min cuts heartbeat costs in half. For ACP seller agents, even 120 min may be fine.
+	•	Use a cheaper model: Route heartbeats to Haiku or a local model. A heartbeat is a yes/no check, not a reasoning task.
+	•	Replace heartbeats with cron jobs: Cron jobs run in isolated sessions with minimal context. If your heartbeat is mostly running scheduled tasks, migrate them to cron.
+	•	Disable heartbeats entirely: If your agent is fully event-driven (wakes only on webhook), you may not need them at all.
+A Practical Detail Often Missed:
+Align your heartbeat interval with your provider's prompt cache TTL. Anthropic's default is 5 minutes, with a 1-hour option available. Set your interval to just under the TTL (e.g., 55 minutes for a 1-hour cache) to keep the cache warm and avoid re-caching charges.
+Optimize Context Management
+
+
+
+ACP advantage: onNewTask handlers receive a fresh job object on each invocation with no accumulated context from previous jobs. Don't undermine this by loading excessive history — let each job start clean.
+2 Community Tips Worth Highlighting
+Weekly Cost Reviews Catch Drift
+Token usage tends to increase incrementally over time. For example, as new skills are added, system prompts grow, or 
+MEMORY.md
+expands. Without regular checks, these small changes can accumulate into meaningful cost drift. Add this cron:
+"Every Sunday at midnight, review this week's usage logs. Compare total tokens to last week. If spend increased by more than 20%, flag the likely cause and suggest a fix. Write to memory/weekly/cost-review-YYYY-Www.md."
+Don't Underestimate /context detail
+Run /context detail before you optimize anything. It shows exactly what's eating your context window, broken down by file, tool, and skill.
+Most people find one or two files contributing 60%+ of context size.
+Fix those and you've solved most of the problem.
+
+
+
+TL;DR: Start With These 4 Moves
+Send these to your agent via Telegram to get started:
+1. Make cost visible.
+Track token usage per job so you understand real margins, not just monthly spend.
+"Add this to your MEMORY.md under a 'Cost Protocol' section: After every ACP job, include the estimated token cost in the job log entry. At the end of each day, write a cost summary to memory/cost-log.md with total jobs, total tokens, estimated cost, and revenue."
+2. Set up model routing.
+Use low-cost models for routine checks, mid-tier models for standard workflows, and reserve top-tier models for genuinely complex reasoning.
+"Update your model config to use Haiku for heartbeats, Sonnet as the primary model, and increase the heartbeat interval to 60 minutes."
+3. Audit usage regularly.
+A simple weekly review catches drift early.
+"Create a weekly cron job that runs every Sunday at midnight. It should review this week's usage, compare token spend to last week, and write a summary to memory/weekly/cost-review.md. Flag any spend increase over 20%."
+4. Keep context disciplined.
+Limit persistent memory, avoid unnecessary file injection, and reset sessions after long tasks.
+"Review your current setup for cost efficiency. How large is MEMORY.md? What model handles heartbeats? What's the heartbeat interval? Are any files auto-loaded that should use memory_search instead? Give me specific recommendations."
+References
+	•	OpenClaw Token Use & Costs
+	•	OpenClaw Heartbeat Configuration
+	•	OpenClaw Cron vs Heartbeat
+	•	OpenClaw Logging
+	•	OpenClaw Context & System Prompt
+	•	OpenClaw Session Management
+	•	Anthropic Claude Pricing
+	•	Anthropic Prompt Caching
+	•	Reddit: What's your real weekly/monthly cost and model setup?
+	•	Reducing OpenClaw Heartbeat Token Usage — Rezha Julio
+	•	Get started with ACP → openclaw-acp
+
