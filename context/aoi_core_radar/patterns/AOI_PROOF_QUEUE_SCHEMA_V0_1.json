@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "aoineco.aoi.proof_queue.schema.v0.1",
+  "title": "AOI Proof Queue Entry Schema v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "request_id",
+    "created_at",
+    "status",
+    "actor",
+    "target",
+    "params_sanitized"
+  ],
+  "properties": {
+    "schema": {
+      "type": "string",
+      "const": "aoineco.aoi.proof_queue.entry.v0.1"
+    },
+    "request_id": {
+      "type": "string",
+      "minLength": 8,
+      "description": "Idempotency key. Must uniquely identify an intent and prevent double execution/charging."
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["QUEUED", "RETRYING", "SUBMITTED", "SETTLED", "FAILED"],
+      "description": "Lifecycle state of the intent."
+    },
+    "attempt_count": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "last_error": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["code", "message"],
+      "properties": {
+        "code": { "type": "string" },
+        "message": { "type": "string" },
+        "at": { "type": "string", "format": "date-time" }
+      }
+    },
+    "actor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["role"],
+      "properties": {
+        "role": { "type": "string" },
+        "ticker": { "type": "string" },
+        "lens": { "type": "string" },
+        "wallet": {
+          "type": "string",
+          "pattern": "^0x[a-fA-F0-9]{40}$",
+          "description": "Optional public address for provenance (never private keys)."
+        }
+      }
+    },
+    "target": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["provider", "skill_name"],
+      "properties": {
+        "provider": { "type": "string" },
+        "agent_link": { "type": "string" },
+        "x_handle": { "type": "string" },
+        "skill_name": { "type": "string" },
+        "price_quote": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["amount", "currency"],
+          "properties": {
+            "amount": { "type": "string" },
+            "currency": { "type": "string" },
+            "quoted_at": { "type": "string", "format": "date-time" }
+          }
+        }
+      }
+    },
+    "params_sanitized": {
+      "type": "object",
+      "description": "Sanitized parameters (no secrets).",
+      "additionalProperties": true
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "job_id": { "type": "string" },
+        "deliverable_id": { "type": "string" },
+        "tx_hashes": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^0x[a-fA-F0-9]{64}$" }
+        },
+        "explorer_links": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "log_links": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      }
+    },
+    "receipt": {
+      "type": "object",
+      "description": "Optional human/agent receipt summary.",
+      "additionalProperties": true
+    }
+  }
+}
