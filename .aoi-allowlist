@@ -25,3 +25,6 @@ demos/
 
 # scripts (AOI ops)
 scripts/
+
+# local proof queue storage (phase1)
+var/proof_queue/
