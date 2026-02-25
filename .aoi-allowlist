@@ -3,6 +3,8 @@
 
 .aoi-allowlist
 .gitignore
+CURRENT_STATE.md
+MEMORY.md
 solana-sentinel/
 # Allow removal of legacy/broken submodule entry
 narratr-mvp-archive
